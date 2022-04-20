@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Ms+Madi&family=Quicksand:wght@300&family=Roboto+Mono&display=swap');
+
+html {
+    width: 550px;
+    margin: 0 auto;
+    padding: 50px;
+    font-family: 'Roboto Mono', monospace;
+}
+
+header {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 160px 1fr;
+    background-color: #69140E;
+    height: 200px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px black; 
+}
+
+main p {
+    margin-top: 0;
+    color: grey;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.down {
+    margin-bottom: 0;
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+    align-self: center;
+    justify-self: center;
+    margin-left: 40px;
+    padding: 4px;
+    background-color: rgb(233, 229, 229);
+    /* border-radius: 20px; */
+    /* border: 2px solid #F3AAA5; */
+}
+
+h2 {
+    align-self: center;
+    justify-self: center;
+    color: #F3AAA5;
+    font-family: 'Ms Madi', cursive;
+    font-size: 2.5rem;
+}
+
+ul {
+    margin: 0;
+}
+
+footer {
+    background-color: #69140E;
+    padding: 5px;
+    border-radius: 20px;
+    box-shadow: 0 0 20px black; 
+}
+
+.footer-para {
+    text-align: center;
+    color: #F3AAA5;
+}
+.footer-para .last {
+    color: #F5653D;
+}
