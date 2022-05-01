@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Ms+Madi&family=Quicksand:wght@300&family=Roboto+Mono&display=swap');
 
 html {
-    width: 550px;
+    max-width: 550px;
     margin: 0 auto;
     padding: 50px;
     font-family: 'Roboto Mono', monospace;
@@ -11,10 +11,12 @@ header {
     display: grid;
     grid-gap: 10px;
     grid-template-columns: 160px 1fr;
-    background-color: #69140E;
+    background-color: #03192a;
     height: 200px;
-    border-radius: 10px;
-    box-shadow: 0 0 20px black; 
+}
+
+h3 {
+    color: rgb(255, 0, 0);
 }
 
 main p {
@@ -28,8 +30,8 @@ main p {
 }
 
 img {
-    max-width: 100%;
-    max-height: 100%;
+    max-width: 80%;
+    max-height: 80%;
     align-self: center;
     justify-self: center;
     margin-left: 40px;
@@ -40,11 +42,12 @@ img {
 }
 
 h2 {
-    align-self: center;
+    align-self: end;
     justify-self: center;
-    color: #F3AAA5;
+    padding-left: 1rem;
+    color: #ecdf7b;
     font-family: 'Ms Madi', cursive;
-    font-size: 2.5rem;
+    font-size: 1.5rem;
 }
 
 ul {
@@ -52,16 +55,18 @@ ul {
 }
 
 footer {
-    background-color: #69140E;
+    background-color: #03192a;
     padding: 5px;
-    border-radius: 20px;
-    box-shadow: 0 0 20px black; 
 }
 
 .footer-para {
     text-align: center;
-    color: #F3AAA5;
+    color: #4ca2e8;
+    margin: 0;
+    padding: 5px;
 }
 .footer-para .last {
-    color: #F5653D;
+    color: #3d80f5;
+    margin: 0;
+    padding: 5px;
 }
