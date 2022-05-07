@@ -1,0 +1,33 @@
+@media only screen and (min-width: 60em) {
+    header {
+        border-radius: 10px 10px 0 0;
+    }
+    nav{
+        border-radius: 0 0 10px 10px;
+    }
+
+    nav > ul {
+        display: grid;
+        grid-template-columns: repeat(4, minmax(10px, 1fr));
+    }
+
+    .target {
+        display: grid;
+        grid-template-columns: repeat(6, minmax(0, 1fr));
+        grid-gap: 20px;
+    }
+
+    .dan {
+        border-radius: 10px;
+        grid-column: 1/4;
+    }
+
+    .darren {
+        border-radius: 10px;
+        grid-column: 4/-1;
+    }
+
+    footer {
+        border-radius: 0 0 10px 10px; 
+    }
+}
