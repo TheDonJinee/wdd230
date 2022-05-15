@@ -13,9 +13,10 @@ let hh = thisDate.getHours();
 // if (hh < 10) {hh = '0'+ hh;}
 let mm = thisDate.getUTCMinutes();
 // if (mm < 10) {hh = '0'+ mm;}
-// const lastUpdated = `${thisMonth} ${currentDate}/${currentMonth}/${thisYear} ${hh}:${mm}${isAm}`;
+const lastUpdated = `${thisMonth} ${currentDate}/${currentMonth}/${thisYear} ${hh}:${mm}${isAm}`;
 document.querySelector("#year").innerHTML = thisYear;
 document.querySelector("#datetime").innerHTML = thisDate;
+document.getElementById('header-date').innerHTML = lastUpdated;
 
 
 
