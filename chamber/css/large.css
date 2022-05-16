@@ -28,6 +28,7 @@
         margin: 0;
         padding: 0;
         display: flex;
+        font-size: 1.5rem;
     }
 
     .navigation img{
