@@ -1,14 +1,134 @@
-@media only screen and (min-width: 35rem) {
-    .content {
+@media only screen and (min-width: 32.5em) {
+    .logo {
+        grid-template-columns: 200px 1fr;
+    }
+
+    .logo h1 {
+        font-size: 2rem;
+    }
+
+    .navigation {
+        grid-column: 2/-1;
+    }
+
+    .social img {
+        border-radius: 80px;
+    }
+
+    .first {
+       grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(10, 1fr);
+        color: rgba(0,0,0,0.7);
+    }
+
+    .hero {
+        padding: 10px;
+        grid-row: 1/3;
+        grid-column: 1/-1;
+
+    }
+
+    .news {
+        grid-row: 3/5;
+        grid-column: 1/-1;
+    }
+
+    .spot {
+        grid-column: 1/-1;
+        grid-gap: 5px;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto;
+    }
+
+
+    .spot3 {
+        display: none;
+    }
+
+    .join {
+        display: block;
+        padding: 10px;
+        border: 1px solid rgba(0,0,0,0.3);
+        background-color: #eee;
+        grid-column: 1/-1;
+        grid-row: 7/9;
+    }
+    
+
+    .events {
+        padding: 10px;
+        grid-row: 9/11;
+        grid-column: 1/3;
+    }
+
+    .weathers {
+        padding: 10px;
+        grid-row: 9/11;
+    }
+
+    footer {
+        background-color: black;
+        color: #EBFFFE;
+        padding: 20px;
+        text-align: center;
+        font-size: .8rem;
+        margin: 0;
         display: grid;
         grid-template-columns: repeat(4, 1fr);
+        grid-gap: 10px;
     }
 
-    .event {
+    
+
+    footer img {
+        grid-column: 1/2;
+        width: 100%;
+    }
+
+    footer h2 {
+        font-size: 1.5rem;
+        margin-bottom: 0;
+    }
+
+    footer table {
+        grid-column: 2/-1;
+    }
+
+    footer table tr td:nth-child(1) p{
+         margin-top: 0; 
+    }
+
+    footer table td:nth-child(1) {
+        text-align: start;
+        line-height: 1.5;
+    }
+
+    footer hr {
+        grid-column: 1/-1;
+        width: 100%;
+    }
+
+    .copy {
         grid-column: 1/-1;
     }
 
-    .weather {
-        grid-column: 1/-1;
+    #hamburgerBtn {
+        cursor: pointer;
     }
+
+    nav ul.open {
+        display: block;
+    }
+
+    nav ul#pryNav  {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        display: none;
+    }
+
+
+
+    #hamburgerBtn span:nth-child(1) {display: block;}
+    #hamburgerBtn span:nth-child(2) {display: none;}
 }

@@ -5,10 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chamber</title>
+    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/medium.css">
     <link rel="stylesheet" href="css/large.css">
-    <!-- <link rel="stylesheet" href="css/normalize.css"> -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Tapestry&display=swap" rel="stylesheet">
@@ -22,8 +22,8 @@
         </div>
         <div class="navigation">
             <nav>
-                <button><span>&#9776;</span><span>X</span></button>
-                <ul>
+                <button id="hamburgerBtn"><span>&#9776;</span><span>X</span></button>
+                <ul id="pryNav">
                     <li><a href="#">Discover</a></li>
                     <li><a href="#">Directory</a></li>
                     <li><a href="#">Join</a></li>
@@ -42,7 +42,7 @@
             
         </div>
         <div class="date">
-            <p>date<span id="headerDate"></span></p>
+            <p><span id="headerDate"></span></p>
         </div>
         
     </header>
@@ -50,21 +50,17 @@
     <main>
 
         <div class="first">
-            <div class="event">Event</div>
-            <div class="weather">Weather</div>
             <div class="join">Join</div>
+            <div class="hero">Hero with site name and call to action</div>
+            <div class="news">News Release</div>
+            <div class="spot">
+                <div class="spot1">Spotlight 1</div>
+                <div class="spot2">Spotlight 2</div>
+                <div class="spot3">Spotlight 3</div>
+            </div>
+            <div class="events">Event</div>
+            <div class="weathers">Weather</div>
         </div>
-
-        <div class="second">
-            <div class="hero">Hero</div>
-            <div class="news">News</div>
-        </div>
-        
-        <div class="spot">
-            <div>Spotlight 1</div>
-            <div>Spotlight 2</div>
-            <div>Spotlight 3</div>
-        </div>    
         
     </main>
 
@@ -74,17 +70,19 @@
             <tr>
                 <td>
                     <h2>Ejule Onu Chambers</h2>
-                    <p> 21 Onyedega Street Along Market Road Ejule Onu, Kogi State</p>
+                    <p>21 Onyedega Street Along Market Road Ejule Onu,<br> Kogi State</p>
                 </td>
                 <td>
-                    <em>jineepinee@gmail.com</em>
-                    <p>+234 703 804 9456</p>
-                    <p>📍Location Map</p>
+                    <p><em>jineepinee@gmail.com</em></p>
+                    <p> +234 703 804 9456</p>
+                    <p>📍Location Map</p>            
                 </td>
             </tr>
         </table>
+        
+       
         <hr>
-        <p> &copy;<span id="year"></span>Ejule Onu Chambers | <strong>Omachona God'spower Richard</strong> | WDD 230 Project | Last Updated: <span id="datetime"></span></p>
+        <p class="copy"> &copy;<span id="year"></span> Ejule Onu Chambers | <strong>Omachona God'spower Richard</strong> | WDD 230 Project | Last Updated: <span id="datetime"></span></p>
     </footer>
     <script src="js/scripts.js"></script>
 </body>
