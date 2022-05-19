@@ -1,0 +1,60 @@
+body {
+    max-width: 800px;
+    margin: 20px auto;
+    text-align: center;
+}
+
+main {
+    background-color: rgb(255, 0, 208);
+    padding: 20px;
+    height: 800px;
+}
+
+h1 {
+    color: black;
+}
+
+label {
+    color: white;
+    font-size: 1.2rem;
+}
+
+input {
+    padding: 5px;
+    font-size: 1.2rem;
+}
+
+button {
+    font-size: 1.2rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 600;
+    cursor: pointer;
+    padding: 5px;
+    border-radius: 5px;
+    color: black;
+    background-color: rgb(243, 220, 220);
+}
+
+button:hover {
+    background-color: black;
+    color: rgb(243, 220, 220);
+    border-radius: 20px;
+}
+
+ul {
+    border: 1px solid #333;
+    border-style: dashed;
+}
+
+li {
+    font-size: 1.2rem;
+    color: white;
+    padding: 5px;
+    margin-right: 5px;
+    text-align: left;
+}
+
+span {
+    position: absolute;
+    left: 20px;
+}
