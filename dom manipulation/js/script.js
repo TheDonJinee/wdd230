@@ -7,7 +7,7 @@ btnPress.addEventListener('click', () => {
     const delBtn = document.createElement('button');
     const spanElement = document.createElement('span');
 
-   listItems.textContent = userInput.value;
+   listItems.textContent = `${userInput.value} `;
    userInput.value = '';
 
    delBtn.textContent = '❌'

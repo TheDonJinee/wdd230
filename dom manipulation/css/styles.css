@@ -7,7 +7,7 @@ body {
 main {
     background-color: rgb(255, 0, 208);
     padding: 20px;
-    height: 800px;
+    min-height: 400px;
 }
 
 h1 {
@@ -44,6 +44,11 @@ button:hover {
 ul {
     border: 1px solid #333;
     border-style: dashed;
+}
+ul button {
+    float: right;
+    font-size: 1rem;
+    padding: 2px;
 }
 
 li {
