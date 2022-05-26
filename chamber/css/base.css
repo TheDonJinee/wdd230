@@ -15,11 +15,19 @@
     }
 
     .logo h1 {
-        font-size: 1rem;
+        font-size: .9rem;
     }
 
     .social img {
-        width: 1.5rem;
+        width: 1.8rem;
+    }
+
+    img.soc-img1{
+        margin-right: 3px;
+    }
+
+    div.social p a img.soc-img2{
+        margin-left: 3px;
     }
 
     .social {
@@ -34,11 +42,23 @@
     }
 
     .first{
+        width: 85%;
         grid-template-rows: 250px 250px 250px 300px 600px;
     }
 
     .hero {
         grid-row: 1/2;
+    }
+
+    .hero button {
+        font-size: .8rem;
+        bottom: 20px;
+        right: 20px;
+    }
+
+    .hero button:hover {
+        bottom: 22px;
+        right: 22px;
     }
 
     .events {

@@ -224,6 +224,7 @@ main {
     background-color: #EBFFFE;
     color: orangered;
     top: .5rem;
+    font-weight: bold;
 }
 
 .join p {
