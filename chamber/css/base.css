@@ -101,7 +101,7 @@
 
     .news {
         grid-row: 4/5;
-        height: fit-content;
+        height: 93%;
         margin: 0;
     }
 
