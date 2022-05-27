@@ -121,10 +121,10 @@
                 </div>
                 <div class="weathers">
                     <h3>Weather</h3>
-                    <p><span>⛅</span> <span>33&#176;C</span></p>
+                    <p class="temperature"><span class="cloud">⛅</span> <span class="temp">10</span>&deg;<span class="degOrFahr">C</span></p>
                     <p>Partly Cloudy</p>
-                    <p>Wind:&nbsp; &nbsp; &nbsp; 2.5km/h</p>
-                    <p>Wind Chill:&nbsp; &nbsp; &nbsp; N/A</p>
+                    <p>Wind:&nbsp; &nbsp; <span class="wind">2.5</span>km/h</p>
+                    <p>Wind Chill:&nbsp; &nbsp;<span class="windFactor">N/A</span>&deg;<span class="fahr"></span></p>
                 </div>
             </div>
             
@@ -145,5 +145,6 @@
         </footer>
     </div>
     <script src="js/scripts.js"></script>
+    <script src="js/windchill.js"></script>
 </body>
 </html>

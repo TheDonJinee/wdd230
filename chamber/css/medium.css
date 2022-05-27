@@ -109,6 +109,11 @@
         grid-row: 1/2;
     }
 
+    .hero button:hover {
+        right: 42px;
+        bottom: 42px;
+    }
+
     .news {
         grid-column: 1/-1;
         grid-row: 2/3;
@@ -153,6 +158,7 @@
         width: 90%;
         padding: 15px;
         margin: 0 auto;
+       
     }
 
     .join button:hover {
@@ -190,7 +196,31 @@
     }
     
     .weathers span:nth-child(2) {
-        font-size: 2rem;
+        font-size: 1.3rem;
+    }
+
+    .weathers span.cloud {
+        font-size: 2.5rem;
+    }
+
+    .weathers p.temperature {
+        font-size: 1.2rem;
+    }
+
+    .weathers span.windFactor {
+        font-size: .8rem;
+    }
+
+    .weathers span.degOrFahr {
+        font-size: 1.2rem;
+    }
+
+    .weathers span.wind {
+        font-size: .8rem;
+    }
+
+    .weathers span.fahr {
+        font-size: .8rem;
     }
 
     /*=====FOOTER=====*/

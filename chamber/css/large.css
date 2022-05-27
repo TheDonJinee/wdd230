@@ -90,7 +90,7 @@ main {
     grid-template-rows: repeat(3, 18.75rem);
     grid-gap: 20px;
     width: 90%;
-    margin: 0 auto;
+    margin: 20px auto;
     background-color: steelblue;
     padding: 20px;
     /* box-shadow: 5px 5px 5px 5px 5px #000; */
@@ -162,16 +162,32 @@ main {
     padding: 10px;
 }
 
-.weathers span:nth-child(1) {
+.weathers .cloud {
     font-size: 5rem;
 }
 
 .weathers :nth-child(2) {
+    font-size: 1.5rem;
     text-align: left;
 }
 
+
 .weathers span:nth-child(2) {
     font-size: 2.5rem;
+}
+
+.weathers p.temperature {
+    font-size: 2.5rem;
+    margin: 0;
+}
+
+.weathers span.degOrFahr {
+    font-size: 2.5rem;
+    border: none;
+}
+
+.weathers span.fahr {
+    font-size: 1.2rem;
 }
 
 .weathers :nth-child(3){
@@ -187,7 +203,7 @@ main {
 }
 
 .weathers :nth-child(5){
-    padding-top: 5px;
+    padding-bottom: 5px;
     margin: 0;
 }
 

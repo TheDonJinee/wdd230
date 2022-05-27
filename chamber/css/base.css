@@ -5,9 +5,9 @@
     }
 
     .logo {
-        grid-template-columns: 100px 1fr;
+        grid-template-columns: 60px 1fr;
         left: 3.5rem;
-        top: 0;
+        top: 1rem;
     }
 
     .logo img {
@@ -19,7 +19,7 @@
     }
 
     .social img {
-        width: 1.8rem;
+        width: 1.6rem;
     }
 
     img.soc-img1{
@@ -32,6 +32,7 @@
 
     .social {
         top: 2rem;
+        right: 7px;
     }
 
     .navigation nav button {
@@ -42,12 +43,21 @@
     }
 
     .first{
+        margin: 10px auto;
         width: 85%;
         grid-template-rows: 250px 250px 250px 300px 600px;
+        grid-row-gap: 10px;
     }
 
     .hero {
         grid-row: 1/2;
+    }
+
+    .hero h2 {
+        position: absolute;
+        padding: 20px;
+        font-size: 1.2rem;
+        margin: 0;
     }
 
     .hero button {
@@ -77,8 +87,22 @@
         text-align: center;
     }
 
+    .weathers span.cloud {
+        font-size: 2.5rem;
+    }
+
+    .weathers span.windFactor {
+        font-size: .8rem;
+    }
+
+    .weathers span.wind {
+        font-size: .8rem;
+    }
+
     .news {
         grid-row: 4/5;
+        height: fit-content;
+        margin: 0;
     }
 
     .spot {
