@@ -1,0 +1,25 @@
+.con {
+    display: grid;
+    grid-template-rows: 100px repeat(6, 1fr);
+}
+h1 {
+    margin: 0 auto;
+}
+
+picture {
+    margin: 0 auto;
+}
+
+[data-src] {
+    filter: blur(0.2rem);
+    margin: 10px;
+}
+
+.con img[data-src] {
+    filter: blur(0em);
+}
+
+.con img {
+    filter: blur(0.2em);
+    transition: filter .5s;
+  }
