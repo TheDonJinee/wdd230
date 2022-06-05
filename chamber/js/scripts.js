@@ -44,7 +44,7 @@ if (numVisits !== 0) {
 
 // increment the number of visits.
 numVisits++;
-// store the new number of visits value
+// store the new number of visits values
 localStorage.setItem("visits-ls", numVisits);
 
 
