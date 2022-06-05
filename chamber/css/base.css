@@ -5,13 +5,13 @@
     }
 
     .logo {
-        grid-template-columns: 60px 1fr;
+        display: inline-block;
         left: 3.5rem;
-        top: 1rem;
+        top: 1.3rem;
     }
 
     .logo img {
-        width: 100%;
+        width: 20%;
     }
 
     .logo h1 {
@@ -128,4 +128,53 @@
     footer :nth-child(4) {
         line-height: 1.2rem;
     }
+
+    .discover img {
+        max-width: 180px;
+        max-height: 250px;
+    }
+
+    .discover img:hover {
+        max-width: 180px;
+        max-height: 250px;
+    }
+
+    .discover p {
+        font-size: .7rem;
+    }
+
+    .discover h2 {
+        font-size: 1.1rem;
+    }
+
+    .discover .fish img:hover {
+        border-radius: 0;
+        padding: 0;
+    }
+
+    .discover .water img:hover {
+        border-radius: 0;
+        padding: 0;
+    }
+
+    .discover .nice img:hover {
+        border-radius: 0;
+        padding: 0;
+        max-width: 250px;
+    }
+
+    .discover .prom img:hover {
+        border-radius: 0;
+        padding: 0;
+        max-height: 180px;
+        max-width: 250px;
+    }
+
+    .discover .cred img:hover {
+        border-radius: 0;
+        padding: 0;
+        max-height: 180px;
+        max-width: 250px;
+    }
+    
 }

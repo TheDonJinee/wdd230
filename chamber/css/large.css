@@ -24,6 +24,11 @@ header {
     padding-bottom: 5px;
 }
 
+header a {
+    text-decoration: none;
+    color: #EBFFFE;
+}
+
 nav {
     position: absolute;
     left: 35%;
@@ -394,4 +399,140 @@ footer p {
 .copy {
     text-align: center;
     grid-column: 1/-1;
+}
+
+/* Discover page */
+
+.discover {
+    background: url('/chamber/images/pattern.jpg');
+    margin-bottom: 20px;
+    width: 90%;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+.discover img[src]{
+    width: 300px;
+    height: 400px;
+}
+
+.discover img {
+    margin-bottom: 20px;
+}
+
+.discover h2 {
+    text-decoration: underline;
+}
+
+.discover p {
+    line-height: 1.5rem;
+}
+
+.discover .water {
+    margin-bottom: 300px ;
+}
+
+.discover .cred {
+    margin-bottom: 230px ;
+}
+
+.discover .prom {
+    margin-bottom: 230px ;
+    
+}
+
+.discover .nice {
+  margin-bottom: 350px;
+}
+
+.discover .nice img {
+    float: left;
+    margin-right: 40px;
+}
+
+.discover .fish {
+    padding-bottom: 300px;
+}
+.discover .fish img {
+    float: right;
+    margin-left: 40px;
+}
+
+/* .discover .prom p {
+    display: inline;
+    clear: right;
+} */
+
+.discover .cred img  {
+    margin-right: 40px;
+    float: left;
+}
+
+.discover .water img {
+    margin-left: 40px;
+    float: right;
+}
+
+.discover .water p {
+    display: inline;
+}
+
+.discover .prom img  {
+    margin-left: 40px;
+    float: right;
+}
+
+.discover img.up {
+    margin-top: 20px;
+}
+
+.discover img.up:hover {
+    border-radius: 20px;
+    padding: 5px;
+    box-shadow: 5px 5px 10px #000;
+    background-color: #fff;
+    max-width: 290px;
+    max-height: 390px;
+}
+
+.discover img.sec-down:hover {
+    border-radius: 0px 50px;
+    padding: 5px 5px 30px 5px;
+    background-color: #666;
+    box-shadow: 5px 5px 10px #000;
+    max-width: 290px;
+    max-height: 390px;
+}
+
+.discover img.sec-up:hover {
+    border-radius: 20px 20px 0 0;
+    padding: 5px;
+    box-shadow: 5px 5px 10px #000;
+    background-color: #fff;
+    max-width: 290px;
+    max-height: 390px;
+}
+
+.discover img.center:hover {
+    border-radius: 200px;
+    padding: 5px;
+    box-shadow: 5px 5px 10px #000;
+    background-color: #fff;
+    max-width: 290px;
+    max-height: 390px;
+}
+
+.discover img.down:hover {
+    border-radius: 150px 20px;
+    padding: 5px;
+    box-shadow: 5px 5px 10px #000;
+    background-color: #fff;
+    max-width: 290px;
+    max-height: 390px;
+}
+
+.discover p.record-visits {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
 }
