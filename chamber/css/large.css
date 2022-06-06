@@ -404,7 +404,7 @@ footer p {
 /* Discover page */
 
 .discover {
-    background: url('/chamber/images/pattern.jpg');
+    background: steelblue;
     margin-bottom: 20px;
     width: 90%;
     margin: 20px auto;
