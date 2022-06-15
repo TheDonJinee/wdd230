@@ -574,6 +574,10 @@ form .entry input, form .entry textarea {
     flex-basis: 100%;
 }
 
+form .entry input:focus, form .entry textarea:focus {
+    outline: none;
+}
+
 form .entry label {
     font-size: .8rem;
     margin: 5px 0;
