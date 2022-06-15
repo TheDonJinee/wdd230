@@ -352,7 +352,57 @@
         max-height: 270px;  
     }
 
+    main.thankYou h1 {
+        font-size: 3rem;
+    }
+    
+    main.thankYou p {
+        font-size: 1.2rem;
+    }
+
+    
+    main.join {
+        display: block;
+    }
+
+    .join .about h4 {
+        display: block;
+        border: 2px dashed rgb(255, 0, 0);
+        width: fit-content;
+        padding: .2rem;
+        font-size: 1.5rem;
+        color: rgb(255, 0, 0);
+        background-color: rgba(110, 37, 212, 0.549);
+    }
+
+    .join .join-page, .join .about {
+        width: 90%;
+        margin: 1rem auto;
+    }
+    
+    form .entry {
+        display: block;
+    }
+    
+    form .entry label {
+        display: block;
+    }
+    
+    form .entry input, form .entry textarea {
+        width: 100%;
+        max-width: 95%;
+        background-color: rgb(188, 242, 242);
+    }
+    
+    form .entry .joBtn {
+        width: 70%;
+    }
     
 }
 
 /*Good*/
+
+
+/* form div.rad input[type="radio"]:checked{
+    color: blue;
+} */

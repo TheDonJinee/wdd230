@@ -223,6 +223,39 @@
         box-shadow: none;
     }
     
+    main.join {
+        display: block;
+    }
+
+    main.thankYou h1 {
+        font-size: 2rem;
+        line-height: 2.6rem;
+    }
+    
+    main.thankYou p {
+        font-size: 1rem;
+    }
+
+    .join .join-page, .join .about {
+        width: 80%;
+        margin: .5rem auto;
+    }
+
+    form .entry input, form .entry textarea {
+        max-width: 95%;
+        padding: .5rem;
+    }
+
+    form .entry .joBtn {
+        width: 50%;
+    }
+    
+    .join .about h4 {
+        border: 2px dashed rgb(255, 0, 0);
+        padding: .2rem;
+        font-size: 1.2rem;
+        background-color: rgba(0, 0, 0, 0.4);
+    }
 }
 
 /*Good*/

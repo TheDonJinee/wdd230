@@ -1,0 +1,75 @@
+*::before, *::after{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body{
+  background-image: linear-gradient(to right, #999, rgb(175, 228, 228));
+}
+
+form {
+  margin: 1rem auto;
+  width: 90%;
+  max-width: 1000px;
+}
+
+.form-box{
+  padding: 0.5rem 0;
+  display: flex;
+  flex-direction: row;
+}
+
+.form-box label {
+  flex-basis: 9rem;
+}
+
+.form-box input{
+  flex-basis: 100%;
+}
+
+.level{
+  padding: 0.5rem 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.level .rad {
+  margin-left: 7.8rem;
+}
+
+label, input, textarea {
+  padding: 0.1rem 1rem;
+}
+
+fieldset {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid blue;
+}
+
+fieldset legend {
+  margin: 0 .2rem;
+  padding: 0 .2rem;
+}
+
+fieldset div {
+  display: flex;
+}
+
+fieldset div label{
+  margin: 0;
+  flex-basis: 9rem;
+}
+
+fieldset div input, fieldset div textarea {
+  flex-basis: 100%;
+  border: 1px solid red;
+  padding: 2px 0;
+  margin: 5px 0;
+}
+
+.form-box .goBtn {
+  margin-left: 9rem;
+}

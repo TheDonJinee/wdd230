@@ -134,19 +134,26 @@ main {
     bottom: 40px;
     padding: 10px;
     background-color: firebrick;
-    color: #EBFFFE;
     border: 2px solid #EBFFFE;
     box-shadow: 5px 5px 5px #000;
     cursor: pointer;
     border-radius: 20px;
 }
 
+.hero button a {
+    color: #EBFFFE;
+    text-decoration: none;
+}
+
 .hero button:hover {
     background-color: #182b77;
-    color: #EBFFFE;
     border-radius: 30px;
     right: 45px;
     bottom: 45px;
+}
+
+.hero button:hover a {
+    color: #EBFFFE;
 }
 
 .spot {
@@ -233,17 +240,24 @@ main {
     top: 1rem;
     right: 2rem;
     background-color: orangered;
-    color: #EBFFFE;
     font-size: 1.5rem;
     border-radius: 30px;
     box-shadow: 5px 5px 5px #000;
     cursor: pointer;
 }
 
+.join button a {
+    color: #EBFFFE;
+    text-decoration: none;
+}
+
+.join button:hover a {
+    color: orangered;
+}
+
 .join button:hover {
     padding: 40px;
     background-color: #EBFFFE;
-    color: orangered;
     top: .5rem;
     font-weight: bold;
 }
@@ -538,4 +552,220 @@ footer p {
     text-align: center;
 }
 
-/*Good*/
+/*------------- FORMS ----------------*/
+
+form {
+    border: 1px solid #EBFFFE;
+    border-radius: 10px;
+    width: 40%;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 10px 10px 200px #000;
+    height: fit-content;
+}
+
+form .entry {
+    display: flex;
+    flex-direction: row;
+}
+
+form .entry input, form .entry textarea {
+    flex-basis: 100%;
+}
+
+form .entry label {
+    font-size: .8rem;
+    margin: 5px 0;
+    flex-basis: 9.5rem;
+    color: aqua;
+}
+
+form .entry .joBtn {
+    margin-left: 8rem;
+    padding: .5rem;
+    border-radius: 10px;
+    border: none;
+    color: #000;
+    font-size: 1rem;
+    font-weight: bolder;
+    cursor: pointer;
+    background-image: linear-gradient(to right, rgb(0, 179, 255), rgb(140, 245, 140));
+}
+
+form .entry .joBtn:hover {
+    background-image: linear-gradient(to right,rgb(140, 245, 140), rgb(0, 179, 255));
+}
+
+.rad {
+    margin: 0;
+    padding: .3rem 0;
+}
+
+form legend {
+    margin: 0 1rem;
+    padding: 0 .5rem;
+    color: rgb(0, 172, 246);
+}
+
+form div {
+    display: block;
+    font-size: .8rem;
+    padding: 1rem 0;
+}
+
+form input.joinBtn {
+    width: 100%;
+    max-width: 20rem;
+    padding: 10px;
+    border-radius: 1rem;
+    color: #EBFFFE;
+    background-color: red;
+    border: none;
+    cursor: pointer;
+}
+
+form input.joinBtn:hover {
+    background-color: #EBFFFE;
+    color: red;
+}
+
+form label.top input:required {
+    border-left: 5px solid red;
+}
+
+form label.top input:required:valid {
+    border-left: 5px solid green;
+}
+
+main.thankYou {
+    width: 90%;
+    min-height: 40rem;
+    margin: 10px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: navy;
+    padding: 20px;
+    text-align: center;
+}
+
+main.thankYou div {
+    width: 60%;
+    padding: 10px;
+    background-color: #EBFFFE;
+    border-radius: 20px;
+    box-shadow: 20px 20px 100px #000;
+}
+
+main.thankYou h1 {
+    font-size: 3rem;
+}
+
+main.thankYou p {
+    font-size: 2rem;
+}
+
+main.thankYou img {
+    width: 100%;
+    max-width: 40rem;
+    border-radius: 400px;
+}
+
+/*--------------FOR JOIN--------------*/
+
+main.join {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 20px auto;
+    padding: 40px 0;
+    width: 90%;
+}
+div.box {
+    border: 1px solid #EBFFFE;
+    width: 90%;
+    height: fit-content;
+    margin: 10px auto;
+    padding: .2rem ;
+    box-shadow: 10px 10px 100px #000;
+    background-color: #087df3;
+}
+
+div.about h2 {
+    text-decoration: underline;
+    color: aqua;
+    text-align: center;
+}
+
+div.box ul li, div.box h3 {
+    text-align: center;
+}
+
+div.box ul li {
+    margin: .3rem 0;
+    list-style: none;
+    color: rgb(185, 251, 251);
+}
+
+div.box:nth-child(2){
+    margin: 10px 0;
+}
+
+div.box:nth-child(4){
+    margin: 10px 0;
+}
+
+div.box:nth-child(5) h3{
+    margin: 5px 0;
+}
+
+div.about {
+    border: 1px solid #EBFFFE;
+    border-radius: 10px;
+    width: 40%;
+    padding: 1rem;
+    box-shadow: 10px 10px 200px #000;
+}
+
+div.about h4 {
+    display: none;
+}
+
+input, textarea {
+    padding: 0.3rem 0.4rem;
+    border-radius: 10px;
+}
+
+form input:required {
+    border: 1px solid red;
+    border-left: 4px solid red;
+}
+
+form input:required:valid {
+    border: 1px solid green;
+    border-left: 4px solid green;
+}
+
+form span {
+    color: red;
+}
+
+/* form input.bpos:invalid {
+    border: 1px solid red;
+    border-left: 4px solid red;
+} */
+
+
+
+form div.rad input[radio]{
+    margin-right: 2px;
+}
+
+form fieldset {
+    border-radius: 10px;
+    margin: 2rem 0;
+    padding: .5rem;
+    color: aqua;
+}
