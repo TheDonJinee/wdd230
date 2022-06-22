@@ -13,7 +13,7 @@ async function getCompanies() {
 };
 
 function buildCompanydisplay(data) {
-    data.affiliates.forEach(company => {
+    data.businesses.forEach(company => {
         let card = document.createElement('section');
         let p = document.createElement('p');
         let p2 = document.createElement('p');
@@ -57,5 +57,4 @@ gridBtn.addEventListener('click', () => {
 listBtn.addEventListener('click', () => {
     display.classList.add("list");
     display.classList.remove("cards");
-    console.log('Worked')
 })
