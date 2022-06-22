@@ -1,10 +1,10 @@
-function toggleMenu () {
-    // document.getElementById('hamburgerBtn').classList.toggle('open');
-    document.getElementById('pryNav').classList.toggle('open');
-}
+// function toggleMenu () {
+//     // document.getElementById('hamburgerBtn').classList.toggle('open');
+//     document.getElementById('pryNav').classList.toggle('open');
+// }
 
-const x = document.getElementById('hamburgerBtn');
-x.onclick = toggleMenu;
+// const x = document.getElementById('hamburgerBtn');
+// x.onclick = toggleMenu;
 
 
 const thisDate = new Date(document.lastModified);
@@ -79,7 +79,3 @@ if (numVisits !== 0) {
 numVisits++;
 // store the new number of visits values
 localStorage.setItem("visits-ls", numVisits);
-
-
-
-

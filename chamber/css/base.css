@@ -35,12 +35,58 @@
         right: 7px;
     }
 
-    .navigation nav button {
+    header nav {
+        position: absolute;
+        left: .5rem;
+        top: 5.5rem;
+    }
+    
+    header nav ul {
+        display: none;
+    }
+    
+    header button {
+        display: block;
+        background-color: transparent;
+        color: #EBFFFE;
+        font-size: 2rem;
+        border: 1px solid #888;
+        padding: .2rem .3rem;
+        cursor: pointer;
+    }
+
+    header button :nth-child(2){
+        display: none;
+    }
+
+    header nav ul.menu {
+        display: block;
+        border-top: 1px solid #999;
+        width: 90vw;
+        background: #000;
+        filter: alpha(opacity=20); 
+        position: absolute;
+        top: 6.4rem;
+        left: 0;
+        z-index: 2;
+    }
+
+    header nav ul.menu li {
+        text-align: center;
+        padding: .4rem 0;
+        border-bottom: 1px solid #999;
+    }
+
+    header nav ul.menu a {
+        font-size: 1rem;
+    }
+
+    /* .navigation nav button {
         font-size: 1.5rem;
         padding: 5px;
         left: 1.2rem;
-        bottom: 2rem;
-    }
+        bottom: 2rem; */
+    
 
     .first{
         margin: 10px auto;
@@ -255,6 +301,75 @@
         padding: .2rem;
         font-size: 1.2rem;
         background-color: rgba(0, 0, 0, 0.4);
+    }
+
+    main.directory div.btn button {
+        width: 5rem;
+        padding: 10px 0;
+        margin: 10px 30px;
+        border-radius: 10px;
+    }
+    
+    main.directory button:hover {
+        background-color: #222;
+        width: 10.5rem;
+        margin: 0 26px;
+    }
+    
+    main.directory div.btn {
+        padding: .3rem;
+    }
+
+    main.directory article.cards {
+        grid-template-columns: repeat(1, minmax(100px, 1fr));
+        width: 90%;
+        margin: 10px auto;
+    }
+
+    main.directory article.list section h3 {
+        font-size: 1rem;
+    }
+
+    main.directory article.list section p:nth-child(4){
+        display: none;
+    }
+
+    main.directory article.list section p:nth-child(6){
+        display: none;
+    }
+
+    main.directory article.list section {
+        padding: .3rem .8rem;
+        display: flex;
+        justify-content: space-between;
+        margin: 2rem auto;
+        background-color: #012536;
+        box-shadow: 5px 5px 10px #000;
+        width: 90%;
+    }
+
+    main.directory article.list section {
+        width: 90%;
+    }
+
+    main.directory article.list section h3 {
+        flex-basis: 70%;
+    }
+    
+    main.directory article.list section p, 
+    main.directory article.list section a {
+        flex-basis: 30%;
+        font-size: .7rem;
+    }
+
+    main.directory article.list section p {
+        padding-top: 7px;
+        color: #fff;
+    }
+    
+    main.directory article.list section a {
+        padding-top: 17px;
+        color: aqua;
     }
 }
 
