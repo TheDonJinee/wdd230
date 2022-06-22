@@ -817,6 +817,8 @@ main.directory article.cards section {
 
 main.directory article.cards section h3 {
     text-decoration: underline;
+    color: #fff;
+    font-size: 1.5rem;
 }
 
 main.directory h2 {
@@ -859,6 +861,11 @@ main.directory article.cards section:nth-child(2) img {
 main.directory article.cards section:nth-child(5),
 main.directory article.cards section:nth-child(2) {
     background-color: #fff;
+    color: #000;
+}
+
+main.directory article.cards section:nth-child(5) h3,
+main.directory article.cards section:nth-child(2) h3 {
     color: #000;
 }
 
