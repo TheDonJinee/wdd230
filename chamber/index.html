@@ -122,10 +122,14 @@
                 </div>
                 <div class="weathers">
                     <h3>Weather</h3>
-                    <p class="temperature"><span class="cloud">⛅</span> <span class="temp">10</span>&deg;<span class="degOrFahr">C</span></p>
-                    <p>Partly Cloudy</p>
-                    <p>Wind:&nbsp; &nbsp; <span class="wind">2.5</span>km/h</p>
-                    <p>Wind Chill:&nbsp; &nbsp;<span class="windFactor">N/A</span>&deg;<span class="fahr"></span></p>
+                    <div class="openWeather">
+                        <div class="temperature"><img src="" alt="" class="cloud"> <span class="temp"></span></div>
+                        <p class="condition"></p>
+                        <div class="wind-factor">
+                            <p  class="speed"><span>Wind Speed:</span><span class="wind"></span></p>
+                            <p class="speed"><span>Wind Chill:</span> <span class="windFactor"></span></p>
+                        </div>
+                    </div>
                 </div>
             </div>
             
@@ -141,7 +145,8 @@
                 <p><em>jineepinee@gmail.com</em></p>
                 <p> +234 703 804 9456</p>
                 <p>📍Location Map</p>
-            </div>            
+            </div>   
+            <p class="weather-data">Weather Information Provided By <a href="https://openweathermap.org">OpenWeatherMap</a>         
             <p class="copy"> &copy;<span id="year"></span> Ejule Onu Chambers | <strong>Omachona God'spower Richard</strong> | WDD 230 Project | Last Updated: <span id="datetime"></span></p>
         </footer>
     </div>

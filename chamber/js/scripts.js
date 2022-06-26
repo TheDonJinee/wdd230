@@ -1,12 +1,3 @@
-// function toggleMenu () {
-//     // document.getElementById('hamburgerBtn').classList.toggle('open');
-//     document.getElementById('pryNav').classList.toggle('open');
-// }
-
-// const x = document.getElementById('hamburgerBtn');
-// x.onclick = toggleMenu;
-
-
 const thisDate = new Date(document.lastModified);
 const date = new Date();
 
@@ -27,8 +18,7 @@ document.querySelector("#year").innerHTML = thisYear;
 document.querySelector("#datetime").innerHTML = thisDate;
 document.getElementById('headerDate').innerHTML = `${day}, ${date.getDate()} ${month} ${year}`;
 
-// Lazy Load
-// Get all the images with data-src attribute
+
 let imagesToLoad = document.querySelectorAll('img[data-src]');
 
 function preloadImage(img) {
@@ -59,23 +49,17 @@ const imgObserver = new IntersectionObserver((entries, imgObserver) => {
 
 imagesToLoad.forEach(image => {
     imgObserver.observe(image);
-})
+});
 
-// GET CURRENT DATE
+// const visitsDisplay = document.querySelector(".visits");
 
-const visitsDisplay = document.querySelector(".visits");
+// let numVisits = Number(window.localStorage.getItem("visits-ls"));
 
-// get the stored value in localStorage
-let numVisits = Number(window.localStorage.getItem("visits-ls"));
+// if (numVisits !== 0) {
+// 	visitsDisplay.textContent = numVisits;
+// } else {
+// 	visitsDisplay.textContent = `This is your first visit!`;
+// }
 
-// determine if this is the first visit or display the number of visits.
-if (numVisits !== 0) {
-	visitsDisplay.textContent = numVisits;
-} else {
-	visitsDisplay.textContent = `This is your first visit!`;
-}
-
-// increment the number of visits.
-numVisits++;
-// store the new number of visits values
-localStorage.setItem("visits-ls", numVisits);
+// numVisits++;
+// localStorage.setItem("visits-ls", numVisits);

@@ -194,36 +194,52 @@
         grid-row: 5/6;
     }
 
-    .weathers span:nth-child(1) {
-        font-size: 3rem;
+    .weathers div.openWeather .temperature {
+        margin: 0 auto;
+    }
+
+    .weathers div.openWeather div.temperature{
+        display: flex;
+        padding-left: .1rem;
+        padding-right: .2rem;
     }
     
-    .weathers span:nth-child(2) {
-        font-size: 1.3rem;
+    .weathers div.openWeather div.temperature img{
+        width: 30%;
+        height: 3rem;
     }
-
-    .weathers span.cloud {
-        font-size: 2.5rem;
+    
+    .weathers div.openWeather div.temperature .temp {
+        font-size: 1.5rem;
+        margin-top: 10px;
     }
-
-    .weathers p.temperature {
-        font-size: 1.2rem;
+    
+    .weathers div.openWeather .condition {
+        text-align: right;
+        border-bottom: 1px solid #EBFFFE;
     }
-
-    .weathers span.windFactor {
+    
+    .weathers div.openWeather .wind-factor {
+        display: flex;
+        flex-direction: column;
+        
+    }
+    
+    .weathers div.openWeather .wind-factor .speed {
+        display: flex;
+        justify-content: space-between;
         font-size: .8rem;
     }
-
-    .weathers span.degOrFahr {
-        font-size: 1.2rem;
+    
+    .weathers div.openWeather .wind-factor .speed span:nth-child(1) {
+        flex-basis: 8rem;
+        text-align: end;
     }
-
-    .weathers span.wind {
-        font-size: .8rem;
-    }
-
-    .weathers span.fahr {
-        font-size: .8rem;
+    
+    .weathers div.openWeather .wind-factor .speed span:nth-child(2) {
+        margin: 0 .3rem;
+        text-align: start;
+        flex-basis: 8rem;
     }
 
     /*=====FOOTER=====*/
