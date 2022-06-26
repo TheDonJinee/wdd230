@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebP</title>
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+</head>
+<body>
+
+    <div class="container">
+    
+        <header>
+            <a href="#"><img src="https://developers.google.com/speed/webp/images/webp-devsite-icon.png?hl=es-419" alt="logo"></a>
+            <h3>WebP</h3>
+        </header>
+
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Guides</a></li>
+                <li><a href="#">Reference</a></li>
+                <li><a href="#">Samples</a></li>
+                <li><a href="#">Support</a></li>
+            </ul>
+        </nav>
+
+        <main>
+            <div class="sidebar">
+                <input type="text" placeholder="Filter">
+                <hr>
+                <ul>
+                    <li>FAQ</li>
+                    <li>Compression Techniques</li>
+                    <li>Container Specification</li>
+                    <li>Lossless Bitstream Specification</li>
+                </ul>
+            </div>
+
+            <div>
+                <ul>
+                    <li>Home</li>
+                    <li>></li>
+                    <li>Products</li>
+                    <li>></li>
+                    <li>Make the Web Faster</li>
+                    <li>></li>
+                    <li>WebP</li>
+                    <li>></li>
+                    <li>Reference</li>
+                    <li class="side">¿Te resultó útil?</li>
+                </ul>
+                <h1>Frequently Asked Questions</h1>
+                <h2>What is WebP? Why should I use it?</h2>
+                <p>
+                    WebP is a method of lossy and lossless compression that can be used on a large variety of photographic, translucent and graphical images found on the web. The degree of lossy compression is adjustable so a user can choose the trade-off between file size and image quality. WebP typically achieves an average of 30% more compression than JPEG and JPEG 2000, without loss of image quality (see Comparative Study).
+
+                    The WebP format essentially aims at creating smaller, better looking images that can help make the web faster.
+                </p>
+                <h2>Which web browsers natively support WebP?</h2>
+                <p>
+                    Webmasters interested in improving site performance can easily create optimized WebP alternatives for their current images, and serve them on a targeted basis to browsers that support WebP.
+                    <ul>
+                        <li>
+                            Web lossy support
+                            <ul>
+                                <li>Google Chrome (desktop) 17+</li>
+                                <li>Google Chrome for Android version 25+</li>
+                                <li>Microsoft Edge 18+</li>
+                                <li>Firefox 65+</li>
+                                <li>Opera 11.10+</li>
+                                <li>Native web browser, Android 4.0+ (ICS)</li>
+                            </ul>
+                        </li>
+                        <li>
+                            WebP lossy, lossless & alpha support
+                            <ul>
+                                <li>Google Chrome (desktop) 23+</li>
+                                <li>Google Chrome for Android version 25+</li>
+                                <li>Microsoft Edge 18+</li>
+                                <li>Firefox 65+</li>
+                                <li>Opera 12.10+</li>
+                                <li>Native web browser, Android 4.2+ (JB-MR1)</li>
+                                <li>Pale Moon 26+</li>
+                            </ul>
+                        </li>
+                        <li>
+                            WebP Animation support
+                            <ul>
+                                <li>Google Chrome (desktop and Android) 32+</li>
+                                <li>Microsoft Edge 18+</li>
+                                <li>Firefox 65+</li>
+                                <li>Opera 19+</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </p>
+                <p>Also see the <a href="#">Wikipedia WebP article</a>.</p>
+                <h2>How can I detect browser support for WebP?</h2>
+                <p>
+                    You'll want to serve WebP images only to clients that can display them properly, and fall back to legacy formats for clients that can't. Fortunately there are several techniques for detecting WebP support, both on the client-side and server-side. Some CDN providers offer WebP support detection as part of their service.
+                </p>
+                <h3>Server-side content negotiation via Accept headers</h3>
+                <p>
+                    It is common for web clients to send an "Accept" request header, indicating which content formats they are willing to accept in response. If a browser indicates in advance that it will "accept" the image/webp format, the web server knows it can safely send WebP images, greatly simplifying content negotiation. See the following links for more information.
+                    <ul>
+                        <li>Deploying New Image Formats on the Web</li>
+                        <li>Serving WebP Images to Visitors Using HTML Elements</li>
+                    </ul>
+                </p>
+                <h3>Modernizr</h3>
+            </div>
+
+            <div class="right-side">
+                <h5>Side bar</h5>
+                <ul>
+                    <li>List for the side</li>
+                    <li>List for the side</li>
+                    <li>List for the side</li>
+                    <li>List for the side</li>
+                </ul>
+            </div>
+        </main>
+    </div>
+    <script src="js/scripts.js"></script>
+</body>
+</html>

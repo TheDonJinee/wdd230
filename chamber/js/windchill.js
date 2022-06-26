@@ -43,3 +43,5 @@ function displayResult(weatherData) {
 }
 
 apiFetch(url);
+
+/* Done and complete */

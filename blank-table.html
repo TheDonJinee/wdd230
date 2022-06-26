@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Forms Practice</title>
+  <link rel="stylesheet" href="minimal-table.css">
+</head>
+<body>
+  
+  <form action="/chamber/thankyou.html">
+    <div class="form-box">
+      <label for="name">Name*: </label>
+      <input type="text" name="name" maxlength="20" required pattern="[A-Za-z]" placeholder="Last Name First...">
+    </div>
+    <div class="form-box">
+      <label for="address">Address: </label>
+      <input type="text" placeholder="Where do you live?" value="address" name="address"></label>
+    </div>
+    <div class="form-box">
+      <label for="mail">Email*: </label>
+      <input name="mail" type="email" required placeholder="you@youremail.com" value="email"></label>
+    </div>
+    <div class="form-box">
+      <label for="phone">Phone*: </label>
+      <input type="tel" name="phone" required pattern="[0-9]-"></label>
+    </div>
+    <div class="form-box">
+      <label for="age">Age*: </label>
+      <input type="number" name="age" min="18" max="45" required></label>
+    </div>
+    <div class="level">
+      <label class="lev">Level</label>
+      <label class="rad"><input name="level" type="radio"> Beginner</label>
+      <label class="rad"><input name="level" type="radio"> Intermediate</label>
+      <label class="rad"><input name="level" type="radio"> Expert</label>
+    </div>
+
+    <fieldset>
+      <legend>Business Information</legend>
+      <div>
+        <label for="bname" class="top">Business Name: </label>
+        <input type="text" name="bname" required>
+      </div>
+      <div>
+        <label for="btitle" class="top">Business Title: </label>
+        <input name="btitle" type="text" placeholder="Business Position" pattern="[A-Z]"></label>
+      </div>
+      <div>
+        <label for="bdescriptiion" class="top">Business Description: </label>
+        <textarea name="bdescription" cols="30" rows="10" placeholder="Describe your business here..."></textarea></label>
+      </div>
+  </fieldset>
+
+  <div class="form-box">
+    <input class="goBtn" type="submit" value="Send">
+  </div>
+  </form>
+
+</body>
+</html>
