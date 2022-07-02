@@ -1,0 +1,466 @@
+@media only screen and (min-width: 60em) {
+    header .date p {
+        font-size: 1.2rem;
+    }
+
+    header .logo {
+        padding-left: 10px;
+        left: .5rem;
+    }
+
+    header .logo a h1 {
+        font-size: 2rem;
+        margin-top: 30px;
+        color: #fff;
+    }
+
+    header .logo a img {
+        max-width: 8rem;
+        width: 100%;
+    }
+
+    header nav button {
+        display: none;
+    }
+
+    header nav {
+        position: absolute;
+        left: 34%;
+        top: 1rem;
+        /* width: 40%; */
+        font-size: 1.4rem;
+    }
+
+    nav ul#pryNav {
+        display: flex;
+        justify-content: space-evenly;
+        width: 40%;
+        background-color: #111;
+        border-top: 2px solid #555;
+        border-bottom: 2px solid #555;
+        padding: 1rem 7rem;
+    }
+
+    header nav ul li {
+        font-size: 1.5rem;
+        margin: 0 .2rem;
+        /* border-radius: 20px; */
+    }
+
+    header nav ul li a {
+        border-top: 1px solid #444;
+        border-bottom: 1px solid #444;
+    }
+
+    /*  */
+
+    /* header nav ul li a:hover {
+        border-radius: 20px;
+    } */
+
+    header .social {
+        max-width: 10rem;
+        position: absolute;
+        right: 2rem;
+        top: 2.5rem;
+    }
+    
+    header .social img {
+        max-width: 5rem;
+        border-radius: 50px;
+        margin: 0 10px;
+    }
+
+    .container .first {
+        box-sizing: border-box;
+        display: grid;
+        grid-template-columns: repeat(4, 24%);
+        grid-template-rows: repeat(3, 1fr);
+        grid-gap: .8rem;
+        margin: 30px auto;
+        width: 97%;
+        padding: 20px;
+    }
+
+    .container .first .events {
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+
+    .container .first .hero {
+        grid-column: 2/4;
+        grid-row: 1/3;
+    }
+
+    .container .first .hero h2 {
+        font-size: 2.5rem;
+    }
+    
+    .container .first .spot {
+        grid-column: 4/-1;
+        grid-row: 1/-1;
+        flex-direction: column;
+        justify-content: space-evenly;
+    } 
+
+    .container .first .spot .spot1 {
+        height: 32%;
+        width: 90%;
+        padding: 0 10px;
+        margin: 0 auto;
+    } 
+
+    .container .first .spot .spot2{
+        height: 32%;
+        margin-left: 0;
+        padding: 0 10px;
+        width: 90%;
+        margin: 0 auto;
+    } 
+
+    .container .first .spot .spot3{
+        display: block;
+        height: 32%;
+        background-color: rgb(3, 38, 43);
+        box-shadow: 5px 5px 10px #000;
+        padding: 0 10px;
+        width: 90%;
+        margin: 0 auto;
+    } 
+
+    .container .first .join {
+        margin: 0;
+    }
+
+    .container .first .spot .spot1 p:nth-child(2) {
+        font-size: 4rem;
+        position: relative;
+        top: 40px;
+    } 
+
+    .container .first .spot .spot1 p:nth-child(3) {
+        position: relative;
+        top: 40px;
+    } 
+
+    .container .first .spot .spot1 hr {
+        margin-top: 80px;
+    }
+
+    .container .first .spot .spot2 p:nth-child(2){
+        font-size: 4rem;
+        position: relative;
+        top: 30px;
+    } 
+
+    .container .first .spot .spot2 p:nth-child(3) {
+        position: relative;
+        top: 30px;
+    } 
+    
+    .container .first .spot .spot2 hr {
+        margin-top: 60px;
+    }
+
+    .container .first .spot .spot3 p:nth-child(2) {
+        font-size: 4rem;
+    }
+
+    .container .first .weathers {
+        grid-column: 1/2;
+        grid-row: 2/3;
+        padding: 20px 20px 40px 20px;
+    }
+
+    .container .first .weathers .openWeather .temperature img {
+        width: 5rem;
+        height: 5rem;
+    }
+
+    .container .first .weathers .openWeather .temperature span {
+        font-size: 2rem;
+        position: relative;
+        bottom: 25px;
+    }
+
+    .container .first .weathers .openWeather .condition {
+        text-align: end;
+    }
+
+    .container .first .weathers .openWeather .wind-factor {
+        border-top: 1px solid #fff;
+        /* width: 90%; */
+        margin: 0 auto;
+    }
+
+    .container .first .weathers .openWeather .wind-factor .speed {
+        display: flex;
+    }
+
+    .container .first .weathers .openWeather .wind-factor .speed span {
+        flex-basis: 50%;
+        /* border: 1px solid #fff; */
+        margin: 0 10px;
+    }
+
+    .container .first .weathers .openWeather .wind-factor .speed span:nth-child(1) {
+        text-align: end;
+    }
+
+    .container .first .weathers .openWeather .wind-factor .speed span:nth-child(2) {
+        text-align: start;
+    }
+
+    .container .first .join {
+        grid-column: 1/2;
+        grid-row: 3/-1;
+    }
+
+    .container .first .news {
+        grid-column: 2/4;
+        grid-row: 3/-1;
+    }
+
+
+    main.discover {
+        width: 94%;
+        margin: 30px auto;
+    }
+    
+    main.discover img {
+        max-width: 300px;
+        max-height: 400px;
+    }
+    
+    main.discover h2 {
+        font-size: 2rem;
+        color: rgb(3, 38, 43);
+    }
+    
+    main.discover div p {
+        font-size: 1rem;
+        line-height: 2rem;
+    }
+    
+    main.discover div {
+        margin: 100px auto;
+    }
+
+    main.discover .water {
+        text-align: right;
+        margin-bottom: 200px;
+    }
+
+    main.discover .water img {
+        float: right;
+        margin-left: 40px;
+    }
+
+    main.discover .cred {
+        text-align: left;
+        margin-bottom: 200px;
+    }
+
+    main.discover .cred img {
+        float: left;
+        margin-right: 40px;
+    }
+
+    main.discover .prom {
+        text-align: right;
+        margin-bottom: 200px;
+    }
+
+    main.discover .prom img {
+        float: right;
+        margin-left: 40px;
+    }
+
+    main.discover .prom div {
+        margin: 0 auto;
+    }
+
+    main.discover .nice {
+        text-align: left;
+        margin-bottom: 200px;
+    }
+
+    main.discover .nice img {
+        float: left;
+        margin-right: 40px;
+    }
+
+    main.discover .fish {
+        text-align: right;
+        padding-bottom: 200px;
+    }
+
+    main.discover .fish img {
+        float: right;
+        margin-left: 40px;
+    }
+
+    .join {
+        display: flex;
+        justify-content: space-evenly;
+        margin: 30px auto;
+    }
+
+    .join .about {
+        width: 40%;
+    }
+
+    .join .about div:nth-child(5) {
+        margin-bottom: 30px;
+    }
+
+    .join .about div:nth-child(2) {
+        margin-top: 30px;
+    }
+
+    .join .about h2 {
+        margin-top: 40px;
+    }
+
+    .join .about h4 {
+        display: none;
+    }
+
+    .join form {
+        width: 40%;
+    }
+    
+    .join form .entry:nth-child(1) {
+        margin-top: 40px;
+    }
+
+    .join form .entry {
+        flex-direction: row;
+        width: 90%;
+    }
+
+    .join form .entry label {
+        flex-basis: 12rem;
+    }
+
+    .join form fieldset {
+        width: 85%;
+    }
+
+    .join form .joBtn {
+        flex-basis: 100%;
+    }
+
+    .directory {
+        width: 93%;
+        margin: 30px auto;
+        background-color: rgba(3, 38, 43,.2);
+        padding: 20px;
+    }
+
+    .directory .cards section {
+        width: 350px;
+        height: 450px;
+    }
+
+    .directory h2 {
+        font-size: 2rem;
+    }
+
+    .directory .btn button {
+        padding: .8rem 3rem;
+        margin: 0 10px;
+        border-radius: 20px;
+        font-weight: 600;
+        background-color: #fff;
+        color: rgb(3, 38, 43);
+        border: 1px solid rgb(3, 38, 43);
+        cursor: pointer;
+    }
+    
+
+    .directory .cards section:nth-child(1) h3,
+    .directory .cards section:nth-child(2) h3,
+    .directory .cards section:nth-child(3) h3,
+    .directory .cards section:nth-child(4) h3,
+    .directory .cards section:nth-child(5) h3,
+    .directory .cards section:nth-child(6) h3,
+    .directory .cards section:nth-child(7) h3,
+    .directory .cards section:nth-child(8) h3,
+    .directory .cards section:nth-child(9) h3,
+    .directory .cards section:nth-child(10) h3 {
+        font-size: 2rem;
+    }
+
+    .directory .cards section:nth-child(1) p,
+    .directory .cards section:nth-child(2) p,
+    .directory .cards section:nth-child(3) p,
+    .directory .cards section:nth-child(4) p,
+    .directory .cards section:nth-child(5) p,
+    .directory .cards section:nth-child(6) p,
+    .directory .cards section:nth-child(7) p,
+    .directory .cards section:nth-child(8) p,
+    .directory .cards section:nth-child(9) p,
+    .directory .cards section:nth-child(10) p {
+        font-size: 1.1rem;
+        line-height: 2rem;
+    }
+
+    .directory .cards section:nth-child(1) a,
+    .directory .cards section:nth-child(2) a,
+    .directory .cards section:nth-child(3) a,
+    .directory .cards section:nth-child(4) a,
+    .directory .cards section:nth-child(5) a,
+    .directory .cards section:nth-child(6) a,
+    .directory .cards section:nth-child(7) a,
+    .directory .cards section:nth-child(8) a,
+    .directory .cards section:nth-child(9) a,
+    .directory .cards section:nth-child(10) a {
+        font-size: 1.1rem;
+    }
+
+    .directory .cards section:nth-child(3) {
+        max-width: 350px;
+        height: 450px;
+    }
+
+    .directory .cards {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        grid-gap: 30px;
+    }
+
+    .directory .list section h3 {
+        font-size: 1.2rem;
+        flex-basis: 20rem;
+        margin-left: 40px;
+    }
+
+    .directory .cards section h3 {
+        font-size: 1.5rem;
+    }
+
+    .directory .cards section:nth-child(3) {
+        width: 90%;
+    }
+
+    .directory .list section p:nth-child(4) {
+        flex-basis: 13rem;
+        font-size: 1rem;
+        /* border: 1px solid #fff; */
+    }
+    
+    .directory .list section a {
+        flex-basis: 10rem;
+        font-size: 1.2rem;
+    }
+
+    .directory .list section p:nth-child(6) {
+        border: 1px solid #fff;
+        flex-basis: 28rem;
+        text-align: center;
+        margin-left: 15px;
+        padding: .4rem .2rem;
+        font-size: 1.2rem;
+    }
+
+}

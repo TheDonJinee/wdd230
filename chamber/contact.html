@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Ejule Onu Chamber</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+    <link rel="short icon" href="favicon-16x16.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Tapestry&display=swap" rel="stylesheet">
+</head>
+<body>
+
+        <div class="container">
+
+        <header>
+            <div class="logo">
+                <a href="index.html">
+                    <img src="images/logo.webp" alt="Logo">
+                    <h1><span class="head1">Ejule Onu</span> <br>Chambers</h1>
+                </a>
+            </div>
+
+            <nav>
+                <button id="hamburgerBtn"><span>&#9776;</span><span>X</span></button>
+                    <ul id="pryNav">
+                        <li><a href="discover.html">Discover</a></li>
+                        <li><a href="directory.html">Directory</a></li>
+                        <li><a href="join.html">Join</a></li>
+                        <li class="active"><a href="contact.html">Contact</a></li>
+                    </ul>
+            </nav>
+
+            <div class="social">
+                <div><a href="https://www.facebook.com" target="_blank">
+                    <img src="images/facebook.png" alt="Facebook Icon" class="soc-img1">
+                </a></div>
+                <div><a href="https://www.twitter.com" target="_blank">
+                    <img src="images/twitter.png" alt="Twitter Icon" class="soc-img2">
+                </a></div>
+            </div>
+                
+            <div class="date">
+                <p><span id="header-date"></span></p>
+            </div>
+            
+        </header>
+
+
+        <main class="contact-us">
+
+            <div class="con-begin">
+                <section>
+                    <h2>Contact Us...</h2>
+                    <p>21 Onyedega Street Along Market Road Ejule Onu </p>
+                    <p>Kogi State</p>
+                    <p>+234 703 804 9456</p>
+                </section>
+                <img src="images/writing.jpg" alt="Writing Contact" class="img1">
+            </div>    
+
+            <div class="inq">
+                <div class="inquiries">
+                    <img src="images/DonJineeSmall.jpg" alt="Richard" class="rich">
+                    <h3>General Inquires</h3>
+                    <p>Mr Omachona Richard will always be available for any inquiry you may want to make <br>
+                    Phone: +234 703 804 9456 <br>
+                    Email: <em>jineepinee@gmail.com</em><br>
+                    </p>
+                </div>
+                <div class="other-inq">
+                    <h4>Membership</h4>
+                    <p>To become a member, send us a message via <br>
+                    <em>customer@ejuleonuchambers.com</em></p><br>
+                    <h4>Economic development or Participation</h4>
+                    <p><a href="#">Jacob Paul</a>, Consultant, Development Dept.</p>
+                    <h4>Sponsorship</h4>
+                    <p><em>sponsorship@ejuleonuchambers.com</em></p>
+                </div>
+            </div>
+            <form method="get" action="thankyou.html">
+                <div class="come">
+                    <label for="fname">First Name<span>*</span></label>
+                    <input type="text" required name="fname">
+                </div>
+                <div class="come">
+                    <label for="lname">Last Name<span>*</span></label>
+                    <input type="text" required name="lname">
+                </div>
+                <div class="come">
+                    <label for="mail">Email<span>*</span></label>
+                    <input type="email" required name="mail">
+                </div>
+                <div class="checkme">
+                    <p>Are you a Chamber Member?<span>*</span></p>
+                    <div class="check">
+                        <label><input type="radio" name="member" value="yes"> Yes</label>
+                    </div>
+                    <div class="check">
+                        <label><input type="radio" name="member" value="no"> No</label>
+                    </div>
+                    <div class="check">
+                        <label><input type="radio" name="member" value="maybe"> Not Sure</label>
+                    </div>
+                </div>
+                <div class="come">
+                    <label for="message">Any questions for Richard?</label>
+                    <textarea name="message" id="msg" cols="30" rows="10"></textarea>
+                </div>
+                <div class="come">
+                    <input type="submit">
+                </div>
+
+            </form>
+
+        </main>         
+
+        <footer>
+            <img src="images/logo.webp" alt="Logo">
+            <div class="foot-address">
+                <h2>Ejule Onu Chambers</h2>
+                <p>21 Onyedega Street Along Market Road Ejule Onu,<br> Kogi State</p>
+            </div>
+            <div class="contact">
+                <p><em>jineepinee@gmail.com</em></p>
+                <p> +234 703 804 9456</p>
+                <p>📍Location Map</p>
+            </div>   
+            <p class="copy"> &copy;<span id="year"></span> Ejule Onu Chambers | <strong>Omachona God'spower Richard</strong> | WDD 230 Project | Last Updated: <span id="datetime"></span></p>
+        </footer>
+    </div>
+    <script src="js/scripts.js"></script>
+</body>
+</html>

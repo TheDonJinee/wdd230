@@ -1,478 +1,333 @@
-@media only screen and (max-width: 60em) {
+@media only screen and (min-width: 32.5em) {
 
-    .container {
-        padding: 10px;
-        font-family: 'Open Sans', sans-serif;
-    }
-
-    body p {
-        font-size: .9rem;
-    }
-    
-    /* =====HEADER===== */
-    
-    header {
-        background-color: #000;
-        color: #EBFFFE;
-        position: relative;
+    header .logo {
+        left: 3rem;
+        top: .5rem;
     }
 
-    header nav {
-        position: absolute;
-        left: .5rem;
-        top: 5.5rem;
+    header nav ul li {
+        font-size: 1.2rem;
+    }
+
+    header .social {
+        max-width: 10rem;
+        right: 3rem;
+        top: 1.5rem;
     }
     
-    header nav ul#pryNav {
-        display: none;
+    header .social img {
+        max-width: 3rem;
+        border-radius: 40px;
+        margin: 0 5px;
     }
-    
-    header button {
+
+    .container .first {
+        grid-template-columns: 2fr 1fr;
+        grid-template-rows: 300px 250px 350px 250px 250px;
+    }
+
+    .container .first .news {
+        grid-column: 1/-1;
+        grid-row: 2/3;
+        text-align: center;
+        background-color: darkblue;
+        color: #fff;
+        margin: 0;
+    }
+
+    .container .first .news p {
+        line-height: 2rem;
+        font-size: 1rem;
+        padding: 20px;
+    }
+
+    .container .first .hero {
+        grid-column: 1/-1;
+        grid-row: 1/2;
+        text-align: center;
+        background-color: rgb(3, 38, 43);
+        color: #fff;
+    }
+
+    .container .first .spot {
+        grid-column: 1/-1;
+        grid-row: 3/4;
+        flex-direction: row;
+        padding: 20px;
+    }
+
+    .container .first .spot .spot1 {
+        margin: 0;
+        width: 100%;
+        margin-right: 10px;
+    }
+
+    .container .first .spot .spot2 {
+        margin: 0;
+        width: 100%;
+        margin-left: 10px;
+    }
+
+    .container .first .join {
+        grid-column: 1/-1;
         display: block;
-        background-color: transparent;
-        color: #EBFFFE;
-        font-size: 2rem;
-        border: 1px solid #888;
-        padding: .2rem .3rem;
+        grid-row: 4/5;
+        padding: 20px;
+        padding-right: 17px;
+        text-align: center;
+        margin: 0;
+    }
+
+    .container .first .join p {
+        padding: 50px 0;
+        line-height: 2rem;
+    }
+
+    .container .first .join .joinUsBtn {
+        border: 1px solid darkblue;
+        font-size: 1.5rem;
+        width: 92%;
+        height: 3rem;
+        margin: 0 auto;
+        background-color: rgba(13, 225, 225, 0.9);
+        color: red;
+        border-radius: 40px;
         cursor: pointer;
     }
 
-    header button :nth-child(2){
-        display: none;
-    }
-
-    header nav ul.menu {
-        display: block;
-        border-top: 1px solid #999;
-        width: 90vw;
-        background: #000;
-        filter: alpha(opacity=20); 
-        position: absolute;
-        top: 6.4rem;
-        left: 0;
-        z-index: 2;
-    }
-
-    header nav ul.menu li {
-        text-align: center;
-        padding: .4rem 0;
-        border-bottom: 1px solid #999;
-    }
-
-    header nav ul.menu a {
-        font-size: 1rem;
-    }
-    
-    .logo {
-        display: inline-block;
-        width: fit-content;
-        padding: 1.25rem;
-        position: relative;
-        top: 1.8rem;
-        left: 4.5rem;
-    }
-
-    .logo img {
-        max-width: 40%;
-    }
-
-    h1 {
-        font-size: 1.2rem;
-        align-self: center;
-        margin-left: 5px;
-    }
-
-    .logo img {
-        width: 150px;
-    }
-    
-    .social {
-        position: absolute;
-        top: 4.5rem;
-        right: 1rem;
-        margin: 0;
-    }
-    
-    .social img {
-        border-radius: 50px;
-        width: 3.25rem;
-        margin: 10px;
-    }
-
-    /* ====BODY====*/
-
-    .first{
-        display: grid;
-        grid-template-columns: repeat(3, minmax(0, 1fr));
-        grid-template-rows: 300px 250px 280px 250px 300px;
-    }
-
-    .hero {
-        grid-column: 1/-1;
-        grid-row: 1/2;
-    }
-
-    .hero button:hover {
-        right: 42px;
-        bottom: 42px;
-    }
-
-    .news {
-        grid-column: 1/-1;
-        grid-row: 2/3;
-    }
-
-    .spot {
-        grid-column: 1/-1;
-        grid-row: 3/4;
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-    }
-
-    .spot1 :nth-child(2){
-        font-size: 3rem;
-        text-align: center;
-        margin: 0;
-    }
-
-    .spot2 :nth-child(2) {
-        font-size: 3rem;
-        margin: 0;
-    }
-
-    .spot2 :nth-child(3) {
-        margin-top: 2px;
-    }
-
-    .spot3 {
-        display: none;
-    }
-
-    .join {
-        grid-column: 1/-1;
-        grid-row: 4/5;
-    }
-
-    .join p {
-        padding: 30px;
-    }
-
-    .join button {
-        width: 90%;
-        padding: 15px;
-        margin: 0 auto;
-       
-    }
-
-    .join button:hover {
-        padding: 15px;
-        top: 1rem;
-        background-color: darkolivegreen;
-        color: #EBFFFE;
-    }
-    
-
-    .events {
-        grid-column: 1/3;
-        grid-row: 5/6;
-    }
-
-    .events h3 {
-        margin-bottom: 0;
-    }
-
-    .events p {
-        margin-top: 0;
-    }
-
-    .events h4 {
-        margin: 0;
-    }
-
-    .weathers {
-        grid-column: 3/4;
-        grid-row: 5/6;
-    }
-
-    .weathers div.openWeather .temperature {
-        margin: 0 auto;
-    }
-
-    .weathers div.openWeather div.temperature{
-        display: flex;
-        padding-left: .1rem;
-        padding-right: .2rem;
-    }
-    
-    .weathers div.openWeather div.temperature img{
-        width: 30%;
-        height: 3rem;
-    }
-    
-    .weathers div.openWeather div.temperature .temp {
+    .container .first .join .joinUsBtn a {                
         font-size: 1.5rem;
-        margin-top: 10px;
+        padding: 10px;
+        font-weight: 600;
+        text-decoration: none;
+        display: block;
+        border-radius: 40px;
+    }
+
+    .container .first .join .joinUsBtn:hover {
+        background-color: rgb(65, 65, 223);
+    }
+
+    .container .first .join .joinUsBtn a:hover {
+        color: rgba(13, 225, 225, 0.9);
+    }
+
+    .container .first .events {
+        grid-column: 1/2;
+        grid-row: 5/-1;
+        text-align: center;
+        background-color: darkblue;
+        color: #fff;
+        padding: 20px;
+    }
+
+    .container .first .weathers {
+        grid-column: 2/-1;
+        grid-row: 5/-1;
+        background-color: darkblue;
+        color: #fff;
+        text-align: center;
+    }
+
+    main.discover div div {
+        width: 300px;
+        height: 400px;
+        margin-bottom: 10px;
     }
     
-    .weathers div.openWeather .condition {
-        text-align: right;
-        border-bottom: 1px solid #EBFFFE;
+    main.discover img {
+        width: 250px;
+        height: 350px;
+        margin: 45px 25px;
     }
-    
-    .weathers div.openWeather .wind-factor {
-        display: flex;
-        flex-direction: column;
-        
+
+    main.discover .water img:hover {
+        border: steelblue 1px solid;
+        padding: 10px;
+        border-radius: 50px;
+        background-color: #EBFFFE;
+        width: 230px;
+        height: 330px;
     }
-    
-    .weathers div.openWeather .wind-factor .speed {
-        display: flex;
-        justify-content: space-between;
-        font-size: .8rem;
+
+    main.discover .cred img:hover {
+        border: steelblue 1px solid;
+        padding: 10px;
+        border-radius: 50px 0;
+        background-color: #fff;
+        width: 230px;
+        height: 330px;
     }
-    
-    .weathers div.openWeather .wind-factor .speed span:nth-child(1) {
-        flex-basis: 8rem;
-        text-align: end;
+
+    main.discover .prom img:hover {
+        border: steelblue 1px solid;
+        padding: 10px;
+        padding-bottom: 20px;
+        border-radius: 50px 50px 0 0;
+        background-color: #fff;
+        width: 230px;
+        height: 320px;
     }
-    
-    .weathers div.openWeather .wind-factor .speed span:nth-child(2) {
-        margin: 0 .3rem;
-        text-align: start;
-        flex-basis: 8rem;
+
+    main.discover .nice img:hover {
+        border: steelblue 1px solid;
+        padding: 10px;
+        padding-bottom: 30px;
+        border-radius: 200px;
+        background-color: #fff;
+        width: 230px;
+        height: 310px;
+    }
+
+    main.discover .fish img:hover {
+        border: steelblue 1px solid;
+        padding: 10px;
+        border-radius: 0 100px;
+        background-color: #fff;
+        width: 230px;
+        height: 330px;
     }
 
     footer {
-        grid-gap: 10px;
-        padding: 10px 50px;
-        grid-template-columns: 150px repeat(2, 1fr);
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        padding: 20px;
     }
 
     footer img {
-        width: 150px;
+        grid-column: 1/2;
+        justify-self: end;
+        margin-right: 20px;
     }
 
-    .foot-address h2 {
-        padding-bottom: 10px;
+    footer .foot-address {
+        grid-column: 2/3;
+        text-align: start;
+    }
 
+    footer .contact {
+        grid-column: 3/-1;
+        border-bottom: none;
+        text-align: start;
+        margin-left: 20px;
+    }
+
+    footer .contact p:nth-child(1) {
+        margin-top: 0;
+    }
+
+    footer .weather-data {
+        grid-column: 1/-1;
+    }
+
+    footer .copy {
+        grid-column: 1/-1;
+    }
+
+    
+    main.discover h2 {
         font-size: 1.5rem;
     }
-
-    .foot-address p {
-        line-height: 1.2;
-        font-size: .8rem;
+    
+    main.discover p {
+        font-size: .9rem;
+        line-height: 1.5rem;
+    }
+    
+    .container .first .join {
+        background-color: darkblue;
+        color: #EBFFFE;
+        padding: 20px;
     }
 
-    .contact {
-        padding-right: 10px;
-        font-size: .8rem;
+    .join .about div p {
+        font-size: .9rem;
+    }
+    
+    .join .about div h3 {
+        font-size: 1.4rem;
     }
 
-    .copy{
-        font-size: .8rem;
+    .directory .cards {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 20px;
     }
 
-    .discover {
+    .directory .cards section {
+        width: 250px;
+        height: 350px;
+    }
+
+    .directory .cards section:nth-child(3) {
+        max-width: 250px;
+        height: 350px;
+
+    }
+
+    .directory .list section h3 {
+        font-size: 1.2rem;
+        flex-basis: 16rem;
+    }
+
+    .directory .list section p:nth-child(4) {
+        display: block;
+        align-self: center;
+        flex-basis: 10rem;
+        font-size: .9rem;
+
+    }
+    
+    .directory .list section a {
+        font-size: .9rem;
+        flex-basis: 4rem;
+    }
+
+    .directory .list section p:nth-child(6) {
+        border: 1px solid #fff;
+        flex-basis: 10rem;
         text-align: center;
+        margin-left: 15px;
+        padding: .4rem .2rem;
+        border-radius: 20px;
+        background-color: gold;
+        color: rgb(3, 38, 43);
     }
 
-    .discover .water img {
-        margin: 0 auto;
+    main.thankYou div img {
+        width: 400px;
+        height: 400px;
+        border-radius: 300px;
     }
 
-    .discover .water {
-        display: grid;
-        margin-bottom: 50px;
+    .contact-us img.img1 {
+        width: 400px;
+        height: 400px;
     }
 
-    .discover .cred {
-        display: grid;
-        margin-bottom: 50px;
+    .contact-us h2 {
+        font-size: 1.6rem;
     }
 
-    .discover .cred img {
-        margin: 0 auto;
-    }
-
-    .discover .prom {
-        display: grid;
-        margin-bottom: 50px;
-    }
-
-    .discover .prom img {
-        margin: 0 auto;
-    }
-
-    .discover .nice {
-        display: grid;
-        margin-bottom: 50px;
-    }
-
-    .discover .nice img {
-        margin: 0 auto;
-    }
-
-    .discover .fish {
-        display: grid;
-        padding-bottom: 50px;
-    }
-
-    .discover .fish img {
-        margin: 0 auto;
-    }
-
-    .discover .fish img:hover {
-        max-width: 190px;
-        max-height: 270px;  
-    }
-
-    .discover img {
-        max-width: 200px;
-        max-height: 280px;
-    }
-
-    .discover p {
-        font-size: .8rem;
-        margin: 0;
-    }
-
-    .discover h2 {
-        font-size: 1.2rem;
-    }
-
-    .discover .fish img:hover {
-        max-width: 190px;
-        max-height: 270px;  
-    }
-
-    .discover .water img:hover {
-        max-width: 190px;
-        max-height: 270px;  
-    }
-
-    .discover .nice img:hover {
-        max-width: 190px;
-        max-height: 270px;  
-    }
-
-    .discover .prom img:hover {
-        max-width: 190px;
-        max-height: 270px;  
-    }
-
-    .discover .cred img:hover {
-        max-width: 190px;
-        max-height: 270px;  
-    }
-
-    main.thankYou h1 {
-        font-size: 3rem;
-    }
-    
-    main.thankYou p {
-        font-size: 1.2rem;
-    }
-
-    
-    main.join {
-        display: block;
-    }
-
-    .join .about h4 {
-        display: block;
-        border: 2px dashed rgb(255, 0, 0);
-        width: fit-content;
-        padding: .2rem;
+    .contact-us h3 {
         font-size: 1.5rem;
-        color: rgb(255, 0, 0);
-        background-color: rgba(110, 37, 212, 0.549);
     }
 
-    .join .join-page, .join .about {
-        width: 90%;
-        margin: 1rem auto;
-    }
-    
-    form .entry {
-        display: block;
-    }
-    
-    form .entry label {
-        display: block;
-    }
-    
-    form .entry input, form .entry textarea {
-        width: 100%;
-        max-width: 95%;
-        background-color: rgb(188, 242, 242);
-    }
-    
-    form .entry .joBtn {
-        width: 70%;
+    .contact-us h4 {
+        font-size: 1.3rem;
     }
 
-    main.directory button {
-        width: 10rem;
-        padding: 10px 0;
-        margin: 0 30px;
-    }
-    
-    main.directory button:hover {
-        background-color: #222;
-        width: 10.5rem;
-        margin: 0 26px;
-    }
-    
-    main.directory div.btn {
-        padding: .3rem;
+    .contact-us p {
+        font-size: 1.2rem;
     }
 
-    main.directory article.cards {
-        grid-template-columns: repeat(2, minmax(250px, 1fr));
-        width: 90%;
-        margin: 10px auto;
+    .contact-us .rich {
+        width: 150px;
+        border-radius: 80px;
     }
 
-    main.directory article.list section h3 {
-        font-size: 1rem;
-    }
-
-    main.directory article.list section {
-        padding: .3rem .8rem;
-        display: flex;
-        justify-content: space-between;
-        margin: 2rem auto;
-        background-color: #012536;
-        box-shadow: 5px 5px 10px #000;
-        width: 90%;
-    }
-
-    main.directory article.list section {
-        width: 90%;
-    }
-
-    main.directory article.list section h3 {
-        flex-basis: 40%;
-    }
-    
-    main.directory article.list section p {
-        flex-basis: 20%;
-        color: #fff;
-        font-size: .7rem;
-        padding-top: 7px;
-    }
-    
-    main.directory article.list section a {
-        padding-top: 17px;
-        color: aqua;
-        flex-basis: 20%;
-        font-size: .7rem;
+    .contact-us form .come input[type="submit"] {
+        padding: .6rem 0;
+        font-size: 1.4rem;
     }
 }
-
-/*Good*/
-
-
-/* form div.rad input[type="radio"]:checked{
-    color: blue;
-} */

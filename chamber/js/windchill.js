@@ -1,27 +1,28 @@
+async function fetchApi (url) {
+    try {
+        const response = await fetch(url);
+        if (response.ok) {
+            const data = await response.json();
+            displayData(data);
+            console.log(data)
+        } else {
+            throw Error(response.text())
+        }
+    }
+
+    catch (error) {
+        console.log(error)
+    }
+};
+
+const url = "https://api.openweathermap.org/data/2.5/weather?q=Abeokuta&units=Imperial&appid=1cb0512b8cdcd2339a4a393ee2652300"
 const temp = document.querySelector('.temp');
 const weatherIcon = document.querySelector('.cloud');
 const wind = document.querySelector('.wind');
 const weatherDesc = document.querySelector('.condition');
 const windFactor = document.querySelector('.windFactor');
-const url = 'https://api.openweathermap.org/data/2.5/weather?q=Abeokuta&units=Imperial&appid=1cb0512b8cdcd2339a4a393ee2652300';
 
-
-async function apiFetch(url) {
-    try {
-        const response = await fetch(url);
-        if (response.ok) {
-            const data = await response.json();
-            console.log(data);
-            displayResult(data);
-        } else {
-            throw Error(response.text())
-        }
-    } catch (error){
-        console.log(error)
-    }
-}
-
-function displayResult(weatherData) {
+function displayData(weatherData) {
     const t = weatherData.main.temp;
     const tC = (t - 32) * (5/9)
     const s = weatherData.wind.speed;
@@ -40,8 +41,6 @@ function displayResult(weatherData) {
     } else {
         windFactor.innerHTML = `N/A`;
     }
-}
+};
 
-apiFetch(url);
-
-/* Done and complete */
+fetchApi(url);

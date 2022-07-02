@@ -1,0 +1,223 @@
+@media only screen and (min-width: 32.5em) {
+
+    header .logo {
+        left: 3rem;
+        top: .5rem;
+    }
+
+    header nav ul li {
+        font-size: 1.2rem;
+    }
+
+    header .social {
+        max-width: 10rem;
+        right: 3rem;
+        top: 1.5rem;
+    }
+    
+    header .social img {
+        max-width: 3rem;
+        border-radius: 40px;
+        margin: 0 5px;
+    }
+
+    .container .first {
+        grid-template-columns: 2fr 1fr;
+        grid-template-rows: 300px 250px 350px 250px 250px;
+    }
+
+    .container .first .news {
+        grid-column: 1/-1;
+        grid-row: 2/3;
+        text-align: center;
+        background-color: rgb(3, 38, 43);
+        color: #fff;
+        margin: 0;
+    }
+
+    .container .first .news p {
+        line-height: 2rem;
+        font-size: 1rem;
+        padding: 20px;
+    }
+
+    .container .first .hero {
+        grid-column: 1/-1;
+        grid-row: 1/2;
+        text-align: center;
+        background-color: rgb(3, 38, 43);
+        color: #fff;
+    }
+
+    .container .first .spot {
+        grid-column: 1/-1;
+        grid-row: 3/4;
+        flex-direction: row;
+        padding: 20px;
+    }
+
+    .container .first .spot .spot1 {
+        margin: 0;
+        width: 100%;
+        margin-right: 10px;
+    }
+
+    .container .first .spot .spot2 {
+        margin: 0;
+        width: 100%;
+        margin-left: 10px;
+    }
+
+    .container .first .join {
+        grid-column: 1/-1;
+        display: block;
+        grid-row: 4/5;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .container .first .join p {
+        padding: 50px 0;
+        line-height: 2rem;
+    }
+
+    .container .first .join a button {
+        width: 100%;
+        padding: 10px 0;
+        border-radius: 40px;
+        border: 1px solid rgba(3, 38, 43, .5);
+        cursor: pointer;
+        color: rgb(2, 50, 50);
+        background-color: rgba(13, 225, 225, 0.9);
+        font-size: 1.5rem;
+        font-weight: 600;
+    }
+
+    .container .first .join a button:hover {
+        background-color: rgb(0, 115, 40);
+        color: rgba(13, 225, 225, 0.9);
+    }
+
+    .container .first .events {
+        grid-column: 1/2;
+        grid-row: 5/-1;
+        text-align: center;
+        background-color: rgb(3, 38, 43);
+        color: #fff;
+        padding: 20px;
+    }
+
+    .container .first .weathers {
+        grid-column: 2/-1;
+        grid-row: 5/-1;
+        background-color: rgb(3, 38, 43);
+        color: #fff;
+        text-align: center;
+    }
+
+    footer {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        padding: 20px;
+    }
+
+    footer img {
+        grid-column: 1/2;
+        justify-self: end;
+        margin-right: 20px;
+    }
+
+    footer .foot-address {
+        grid-column: 2/3;
+        text-align: start;
+    }
+
+    footer .contact {
+        grid-column: 3/-1;
+        border-bottom: none;
+        text-align: start;
+        margin-left: 20px;
+    }
+
+    footer .contact p:nth-child(1) {
+        margin-top: 0;
+    }
+
+    footer .weather-data {
+        grid-column: 1/-1;
+    }
+
+    footer .copy {
+        grid-column: 1/-1;
+    }
+
+
+    main.discover img {
+        max-width: 150px;
+        max-height: 200px;
+    }
+    
+    main.discover h2 {
+        font-size: 1.5rem;
+    }
+    
+    main.discover p {
+        font-size: .9rem;
+        line-height: 1.5rem;
+    }
+    
+
+    .join .about div p {
+        font-size: .9rem;
+    }
+    
+    .join .about div h3 {
+        font-size: 1.4rem;
+    }
+
+    .directory .cards {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 20px;
+    }
+
+    .directory .cards section {
+        width: 250px;
+        height: 350px;
+    }
+
+    .directory .cards section:nth-child(3) {
+        max-width: 250px;
+        height: 350px;
+
+    }
+
+    .directory .list section h3 {
+        font-size: 1.2rem;
+        flex-basis: 16rem;
+    }
+
+    .directory .list section p:nth-child(4) {
+        display: block;
+        align-self: center;
+        flex-basis: 10rem;
+        font-size: .9rem;
+
+    }
+    
+    .directory .list section a {
+        font-size: .9rem;
+        flex-basis: 4rem;
+    }
+
+    .directory .list section p:nth-child(6) {
+        border: 1px solid #fff;
+        flex-basis: 10rem;
+        text-align: center;
+        margin-left: 15px;
+        padding: .4rem .2rem;
+        border-radius: 20px;
+        background-color: gold;
+        color: rgb(3, 38, 43);
+    }
+}

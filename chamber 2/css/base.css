@@ -1,0 +1,768 @@
+body{
+    background-color: rgba(0,200,225,.1);
+}
+
+header {
+    background-color: #000;
+    color: #fff;
+    position: relative;
+}
+
+header nav {
+    background-color: transparent;
+}
+
+header nav ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+header nav ul li {
+    background-color: rgb(3, 38, 43);   
+}
+
+header nav ul li a {
+    display: block;
+    text-decoration: none;
+    color: #fff;
+    border-top: 1px solid rgba(0, 0,0, .5);
+    padding: .5rem .7rem;
+    text-align: center;
+}
+
+header nav ul li.active a {
+    background-color: rgb(22, 115, 130);
+}
+
+header nav ul li a:hover {
+    background-color: rgb(60, 117, 126);
+    color: rgb(3, 38, 43);
+}
+
+header nav button {
+    background-color: transparent;
+    border: 0;
+    color: rgba(255, 255, 255, 0.638);
+    margin-left: .3rem;
+    font-size: 2rem;
+    width: 1.8rem;
+    margin: .5rem .4rem;
+    padding: 0;
+    position: absolute;
+    top: 1.7rem;
+    cursor: pointer;
+}
+
+header nav button span:nth-child(2) {
+    display: none;
+}
+
+nav ul {
+    display: none;
+}
+
+nav ul.open {
+    display: block;
+}
+
+#hamburgerBtn.open span:nth-child(1) {
+    display: none;
+}
+
+#hamburgerBtn.open span:nth-child(2) {
+    display: block;
+}
+
+header .date p {
+    text-align: center;
+    font-size: .8rem;
+    margin: 0;
+    padding-bottom: 5px;
+}
+
+header .logo {
+    padding-left: 10px;
+    position: relative;
+    left: 2rem;
+    width: fit-content;
+    top: .5rem;
+    z-index: 2;
+}
+
+header .logo a {
+    text-decoration: none;
+    display: flex;
+}
+
+header .logo a h1 {
+    color: #fff;
+    margin: 15px 0 0 5px;
+    font-size: 1.2rem;
+}
+
+header .logo a img {
+    max-width: 5rem;
+    width: 100%;
+}
+
+header .social {
+    display: flex;
+    max-width: 8rem;
+    position: absolute;
+    right: 1rem;
+    top: 1.5rem;
+    z-index: 2;
+}
+
+header .social img {
+    max-width: 2rem;
+    border-radius: 50px;
+    margin: 0 5px;
+}
+
+.container .first {
+    display: grid;
+    grid-template-rows: 250px 250px 250px 250px 500px;
+    grid-gap: .8rem;
+    padding: .8rem;
+    width: fit-content;
+    margin: 10px auto;
+    background-color: rgba(3, 38, 43, .2);
+}
+
+.container .first p {
+    font-size: .9rem;
+    line-height: 1.2rem;
+    padding: 0 5px;
+}
+
+.container .first .hero {
+    grid-row: 1/2;
+    position: relative;
+}
+
+.container .first .hero img {
+    width: 100%;
+    height: 100%;
+    
+}
+
+.container .first .hero a button {
+    position: absolute;
+    bottom: 20px;
+    border: none;
+    right: 10px;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: red;
+    color: #fff;
+    box-shadow: 5px 5px 5px #000;
+    cursor: pointer;
+}
+
+.container .first .hero a button:hover {
+    background-color: #fff;
+    color: red;
+}
+
+.container .first h3, .container .first h4 {
+    color: rgb(188, 238, 246);
+}
+
+.container .first .hero button a:hover {
+    color: red;
+}
+
+.container .first .hero h2 {
+    position: absolute;
+    top: 0;
+    left: 5px;
+    color: rgb(3, 38, 43);
+}
+
+.container .first .events {
+    grid-row: 2/3;
+    text-align: center;
+    background-color: rgb(3, 38, 43);
+    color: #fff;
+}
+
+.container .first .events p {
+    line-height: 2rem;
+    margin-top: 60px;
+}
+
+.container .first .events span {
+    color: gold;
+}
+
+.container .first .weathers {
+    grid-row: 3/4;
+    background-color: rgb(3, 38, 43);
+    color: #fff;
+    text-align: center;
+}
+
+.container .first .news {
+    grid-row: 4/5;
+    text-align: center;
+    background-color: rgb(3, 38, 43);
+    color: #fff;
+    margin: 0 40px;
+    
+}
+
+.container .first .news p {
+    font-size: .8rem;
+    margin-top: 5px;
+}
+
+.container .first .news h3 {
+    margin-bottom: 5px;
+}
+
+.container .first .spot {
+    grid-row: 5/-1;
+    background-color: rgb(3, 38, 43, 0.5);
+    color: #fff;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.container .first .spot .spot1 {
+    background-color: rgb(3, 38, 43);
+    margin: 20px;
+    height: 100%;
+    box-shadow: 5px 5px 10px #000;
+}
+
+.container .first .spot .spot1 p:nth-child(2) {
+    font-size: 3rem;
+    margin: 30px;
+}
+
+.container .first .spot .spot2 {
+    background-color: rgb(3, 38, 43);
+    box-shadow: 5px 5px 10px #000;
+    margin: 0 20px 20px 20px;
+    height: 100%;
+}
+
+.container .first .spot .spot2 p:nth-child(2) {
+    font-size: 3rem;
+    margin: 30px;
+}
+
+.container .first .spot .spot3 {
+    display: none;
+}
+
+.container .first .join {
+    display: none;
+    background-color: rgb(3, 38, 43);
+    color: #fff;
+}
+
+
+
+footer {
+    background-color: #000;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    line-height: 1.2rem;
+}
+
+footer img {
+    max-width: 8rem;
+}
+
+footer h2 {
+    font-size: 1.2rem;
+    margin: 0;
+}
+
+footer p {
+    font-size: .9rem;
+}
+
+footer .contact {
+    margin: 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.289);
+}
+
+footer .foot-address {
+    margin: 0;
+}
+
+footer .weather-data {
+    font-size: .7rem;
+}
+
+footer .weather-data a {
+    color: rgba(0, 255, 255, 0.574);
+}
+
+footer .weather-data a:hover {
+    color: rgba(0, 255, 255);
+}
+
+
+main.discover {
+    text-align: center;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: rgba(3, 38, 43,.2);
+}
+
+main.discover img {
+    max-width: 120px;
+    max-height: 180px;
+}
+
+main.discover h2 {
+    font-size: 1.2rem;
+    color: rgb(3, 38, 43);
+    text-decoration: underline;
+}
+
+main.discover div p {
+    font-size: .8rem;
+    line-height: 1.2rem;
+}
+
+main.discover p:nth-child(6) {
+    background-color: rgb(3, 38, 43);
+    color: #fff;
+}
+
+main.discover div {
+    margin: 70px auto;
+}
+
+.join {
+    margin: 20px auto;
+    padding: 20px;
+    background-color: rgb(3, 38, 43, 0.2);
+    width: 93%;
+}
+
+.join .about {
+    border: 1px solid #000;
+    width: 90%;
+    margin: 20px auto;
+    background-color: rgba(0,200,225,.2);
+    box-shadow: 5px 5px 10px 5px #000;
+}
+
+.join .about h2 {
+    text-decoration: underline;
+    font-size: 1.4rem;
+    text-align: center;
+}
+
+.join .about h4 {
+    margin-left: 20px;
+    border: 3px dashed rgb(252, 19, 19);
+    border-radius: 10px;
+    width: fit-content;
+    padding: .5rem;
+    background-color: rgba(3, 38, 43, .3);
+    color: rgb(252, 19, 19);
+}
+
+.join .about div {
+    border:  1px solid #000;
+    margin: 10px auto;
+    box-shadow: 5px 5px 10px 5px #000;
+    width: 90%;
+}
+
+.join .about div p {
+    font-size: .8rem;
+}
+
+.join .about div h3 {
+    font-size: 1.2rem;
+}
+
+.join .about div ul {
+    list-style: none;
+    text-align: center;
+    padding-left: 0;
+}
+
+.join form {
+    border: 1px solid #000;
+    width: 90%;
+    margin: 20px auto;
+    background-color: rgba(0,200,225,.2);
+    box-shadow: 5px 5px 10px 5px #000;
+}
+
+.join form .entry {
+    margin: .9rem auto;
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin-bottom: 20px;
+}
+
+.join form .entry span {
+    color: red;
+}
+
+.join form .entry label {
+    margin-bottom: .1rem;
+}
+
+.join form .entry input[type="text"]:required,
+.join form .entry input[type="email"]:required {
+    border: 1px solid red;
+    border-left: 4px solid red;
+}
+
+.join form .entry input:required:valid {
+    border: 1px solid green;
+    border-left: 4px solid green;
+}
+
+.join form .entry input:invalid {
+    border: 1px solid green;
+}
+
+.join form .entry input[type="text"],
+.join form .entry input[type="email"],
+.join form .entry input[type="tel"],
+ .join form .entry textarea {
+    flex-basis: 100%;
+    border-radius: 10px;
+    padding: .2rem .3rem;
+    border: 1px solid #254;
+}
+
+.join form .entry input[type="text"]:focus,
+.join form .entry input[type="email"]:focus,
+.join form .entry input[type="tel"]:focus,
+.join form .entry textarea:focus {
+    outline: none;
+}
+
+.join form fieldset {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.join form fieldset .rad {
+    margin: .3rem 0;
+}
+
+.join form .entry .joBtn {
+    padding: .5rem 0;
+    font-size: 1.2rem;
+    background-color: rgb(3, 38, 43);
+    color: #fff;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+main.thankYou {
+    margin: 20px auto;
+    padding: 20px 0;
+    background-color: rgb(3, 38, 43, 0.2);
+}
+
+main.thankYou div {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+    margin: 0 20ox;
+}
+
+main.thankYou div img {
+    width: 600px;
+    height: 600px;
+    border-radius: 150px;
+}
+
+form .entry .joBtn:hover {
+    background-image: linear-gradient(to right,rgb(140, 245, 140), rgb(0, 179, 255));
+}
+
+.directory {
+    width: 90%;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: rgb(3, 38, 43, 0.2);
+}
+
+.directory h2 {
+    margin-top: 50px;
+    border-top: 3px solid rgb(6, 107, 122);
+    border-bottom: 3px solid rgb(6, 107, 122);
+    padding: .7rem 0;
+    width: fit-content;
+    color: rgb(3, 38, 43);
+}
+
+.directory .btn {
+    width: 80%;
+    margin: 50px auto;
+    text-align: center;
+}
+
+.directory .btn button {
+    padding: .3rem 1rem;
+    margin: 0 10px;
+    border-radius: 20px;
+    font-weight: 600;
+    background-color: #fff;
+    color: #000;
+    cursor: pointer;
+}
+
+.directory .btn button:hover {
+    background-color: rgb(3, 38, 43);
+    color: #fff;
+}
+
+.directory .cards section {
+    border: 1px solid #000;
+    width: 200px;
+    height: 300px;
+    margin: 20px auto;
+    text-align: center;
+    color: rgb(3, 38, 43);
+    border-radius: 20px 20px 0 0;
+    padding-bottom: 20px;
+    box-shadow: 5px 5px 10px #000;
+}
+
+.directory .cards section img {
+    width: 100%;
+    border-radius: 20px 20px 0 0;
+    border-bottom: 3px solid #fff;
+}
+
+.directory .cards section p {
+    font-size: .8rem;
+    width: 90%;
+    margin: 10px auto;
+    line-height: 1.2rem;
+}
+
+.directory .cards section a {
+    font-size: .8rem;
+    text-align: center;
+}
+
+.directory .cards section:nth-child(1) {
+    background-color: #ff5d4c;
+    color: #fff;
+}
+
+.directory .cards section:nth-child(1) a {
+    color: rgba(180, 243, 180, 0.933);
+}
+
+.directory .cards section:nth-child(1) a:hover {
+    color: rgba(212, 238, 212, 0.933);
+}
+
+.directory .cards section:nth-child(2) {
+    background-color: #fff;
+    color: #000;
+}
+
+.directory .cards section:nth-child(2) img {
+    border-bottom: #000 3px solid;
+}
+
+.directory .cards section:nth-child(3) {
+    background-color: rgba(0,0,0,0.9);
+    color: #fff;
+}
+
+.directory .cards section:nth-child(3) img {
+    border-bottom: #fff 3px solid;
+}
+
+.directory .cards section:nth-child(3) a {
+    color: rgba(15, 216, 15, 0.933);
+}
+
+.directory .cards section:nth-child(3) a:hover {
+    color: rgba(59, 253, 59, 0.933);
+}
+
+.directory .cards section:nth-child(4) {
+    background-color: rgba(2, 25, 36, 0.946);
+    color: #fff;
+}
+
+.directory .cards section:nth-child(4) a {
+    color: rgba(15, 216, 15, 0.933);
+}
+
+.directory .cards section:nth-child(4) a:hover {
+    color: rgba(59, 253, 59, 0.933);
+}
+
+.directory .cards section:nth-child(5) {
+    background-color: #fff;
+}
+
+.directory .cards section:nth-child(5) img {
+    border-bottom: #333 3px solid;
+}
+
+.directory .cards section:nth-child(5) a {
+    color: rgba(15, 216, 15, 0.933);
+}
+
+.directory .cards section:nth-child(5) a:hover {
+    color: rgba(59, 253, 59, 0.933);
+}
+
+.directory .cards section:nth-child(6) {
+    background-color: #09347ed1;
+    color: #fff;
+}
+
+.directory .cards section:nth-child(6) img {
+    border-bottom: #fff 3px solid;
+}
+
+.directory .cards section:nth-child(6) a {
+    color: rgba(15, 216, 15, 0.933);
+}
+
+.directory .cards section:nth-child(6) a:hover {
+    color: rgba(59, 253, 59, 0.933);
+}
+
+.directory .cards section:nth-child(7) {
+    background-color: #005693f4;
+    color: #fff;
+}
+
+.directory .cards section:nth-child(7) img {
+    border-bottom: #fff 3px solid;
+}
+
+.directory .cards section:nth-child(7) a {
+    color: rgba(15, 216, 15, 0.933);
+}
+
+.directory .cards section:nth-child(7) a:hover {
+    color: rgba(59, 253, 59, 0.933);
+}
+
+.directory .cards section:nth-child(8) {
+    background-color: rgb(9, 9, 9);
+    color: #fff;
+}
+
+.directory .cards section:nth-child(8) img {
+    border-bottom: #fff 3px solid;
+}
+
+.directory .cards section:nth-child(8) a {
+    color: rgba(15, 216, 15, 0.933);
+}
+
+.directory .cards section:nth-child(8) a:hover {
+    color: rgba(59, 253, 59, 0.933);
+}
+
+.directory .cards section:nth-child(9) {
+    background-color: #1976d2;
+    color: #fff;
+}
+
+.directory .cards section:nth-child(9) img {
+    border-bottom: #fff 3px solid;
+}
+
+.directory .cards section:nth-child(9) a {
+    color: rgba(15, 216, 15, 0.933);
+}
+
+.directory .cards section:nth-child(9) a:hover {
+    color: rgba(59, 253, 59, 0.933);
+}
+
+.directory .cards section:nth-child(10) {
+    background-color: rgb(15, 15, 15);
+    color: #fff;
+}
+
+.directory .cards section:nth-child(10) img {
+    border-bottom: #fff 3px solid;
+}
+
+.directory .cards section:nth-child(10) a {
+    color: rgba(15, 216, 15, 0.933);
+}
+
+.directory .cards section:nth-child(10) a:hover {
+    color: rgba(59, 253, 59, 0.933);
+}
+
+.directory .list section {
+    background-color: rgb(3, 38, 43);
+    color: #fff;
+    padding: 10px;
+    margin: 20px auto;
+    width: 90%;
+    display: flex;
+    box-shadow: 5px 5px 10px #000;
+}
+
+.directory .list section h3 {
+    font-size: .9rem;
+    flex-basis: 12rem;
+    align-items: flex-start;
+    align-self: center;
+}
+
+.directory .list section a {
+    font-size: .8rem;
+    flex-basis: 4rem;
+    margin: 18px 0;
+    text-align: center;
+    color: rgb(140, 245, 140);
+    align-self: center;
+}
+
+.directory .list section a:hover {
+    color: #fff;
+}
+
+.directory .list section p:nth-child(6) {
+    border: 1px solid #fff;
+    flex-basis: 4.5rem;
+    text-align: center;
+    margin-left: 15px;
+    padding: .4rem .2rem;
+    border-radius: 20px;
+    background-color: gold;
+    color: rgb(3, 38, 43);
+}
+
+.directory .list section img {
+    display: none;
+}
+
+.directory .list section p:nth-child(3) {
+    display: none;
+}
+
+.directory .list section p:nth-child(4) {
+    display: none;
+}

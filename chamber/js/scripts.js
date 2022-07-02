@@ -1,23 +1,33 @@
-const thisDate = new Date(document.lastModified);
+const menuBtn = document.querySelector('#hamburgerBtn');
+const pryNav = document.querySelector('#pryNav');
+
+function toggleMenu () {
+    menuBtn.classList.toggle('open');
+    pryNav.classList.toggle('open');
+}
+
+menuBtn.addEventListener('click', toggleMenu)
+
+
+
+
+const modified = new Date(document.lastModified);
 const date = new Date();
+const datetime = document.querySelector('#datetime');
+const daysOfTheWeek = ['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'];
+const monthsOfTheYear = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+const year = date.getFullYear();
+const day = date.getDay();
+const displayDate = date.getDate();
+const month = date.getMonth();
+const dayOfWeek = daysOfTheWeek[day];
+const monthOfYear = monthsOfTheYear[month];
+const headerDate = document.querySelector('#header-date');
+const displayYear = document.querySelector('#year');
 
-const months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
-const days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
-const thisMonth = months[thisDate.getMonth()];
-const thisYear = thisDate.getFullYear();
-const currentDate = thisDate.getDate();
-const currentMonth = thisDate.getMonth() + 1;
-
-
-let day = days[date.getDay()];
-let month = months[date.getMonth()];
-let numberDay = date.getDay();
-let year = date.getFullYear();
-
-document.querySelector("#year").innerHTML = thisYear;
-document.querySelector("#datetime").innerHTML = thisDate;
-document.getElementById('headerDate').innerHTML = `${day}, ${date.getDate()} ${month} ${year}`;
-
+datetime.innerHTML = modified;
+headerDate.innerHTML = `${dayOfWeek}, ${monthOfYear} ${displayDate} ${year}`;
+displayYear.innerHTML = year;
 
 let imagesToLoad = document.querySelectorAll('img[data-src]');
 
@@ -51,15 +61,18 @@ imagesToLoad.forEach(image => {
     imgObserver.observe(image);
 });
 
-// const visitsDisplay = document.querySelector(".visits");
 
-// let numVisits = Number(window.localStorage.getItem("visits-ls"));
+const visitsDisplay = document.querySelector(".visits");
 
-// if (numVisits !== 0) {
-// 	visitsDisplay.textContent = numVisits;
-// } else {
-// 	visitsDisplay.textContent = `This is your first visit!`;
-// }
+let numVisits = Number(window.localStorage.getItem("visits-ls"));
 
-// numVisits++;
-// localStorage.setItem("visits-ls", numVisits);
+if (numVisits !== 0) {
+	visitsDisplay.textContent = numVisits;
+} else {
+	visitsDisplay.textContent = `This is your first visit!`;
+}
+
+numVisits++;
+localStorage.setItem("visits-ls", numVisits);
+
+

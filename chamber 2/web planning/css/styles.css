@@ -1,0 +1,187 @@
+body {
+    background-color: rgba(0,200,225,0.1);
+    margin: 10px 0;
+    padding: 0;
+}
+
+header, nav, main, footer {
+    width: 80%;
+    margin: 0 auto;
+}
+
+header h1 {
+    font-size: 1.2rem;
+}
+
+header, footer {
+    text-align: center;
+    background-color: navy;
+    color: white;
+    padding: 20px 0;
+    border-radius: 10px 10px 0 0;
+}
+
+nav {
+    background-color: slateblue;
+    margin: 10px auto;
+    border-radius:  0 0 10px 10px;
+}
+
+nav ul {
+    display: block;
+    text-align: center;
+    list-style-type: none;
+    margin: 0;
+    padding-left: 0;
+    border-top: 1px solid #fff;
+}
+
+nav ul li {
+    border-bottom: 1px solid #fff;
+}
+
+nav ul li a {
+    display: block;
+    cursor: pointer;
+    padding: 5px 0;
+    font-size: .9rem;
+    color: #fff;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+    color: slateblue;
+    background-color: #fff;
+}
+
+main {
+    border: 1px solid rgba(0,0,0,0.5);
+    margin-bottom: 10px;
+}
+
+main .desc, main .name, main .purpose, main .domain {
+    border:  1px solid rgba(0,0,0,0.5);
+    padding: 10px;
+    margin: 20px 10px;
+    box-shadow: 5px 5px 10px 10px rgba(0,0,0,0.2);
+}
+
+p {
+    font-size: .8rem;
+}
+
+h2 {
+    font-size: 1.2rem;
+}
+
+h3 {
+    font-size: 1rem;
+}
+
+main img {
+    width: 10rem;
+}
+
+footer {
+    border-radius:  0 0 10px 10px;
+}
+
+@media only screen and (min-width: 32.5em){
+
+    nav {
+        padding: 0;
+    }
+    nav ul {
+        display: block;
+        text-align: center;
+        margin: 0;
+        padding-left: 0;
+        border-top: 1px solid #fff;
+    }
+    
+    nav ul li {
+        border-bottom: 1px solid #fff;
+    }
+
+    nav ul li a {
+        display: block;
+        cursor: pointer;
+        padding: 10px 0;
+    }
+
+    nav ul li a:hover {
+        text-decoration: underline;
+        color: slateblue;
+        background-color: #fff;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+    
+    h2 {
+        font-size: 1.4rem;
+    }
+    
+    h3 {
+        font-size: 1.2rem;
+    }
+    
+    main img {
+        width: 12rem;
+    }
+    
+}
+
+@media only screen and (min-width: 60em) {
+
+    header h1 {
+        font-size: 2rem;
+    }
+
+    nav {
+        padding: 5px 0;
+    }
+
+    nav ul {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    nav ul {
+        border-top: 0;
+    }
+    
+    nav ul li {
+        border-bottom: none;
+    }
+
+
+    nav ul li a {
+        display: block;
+        font-size: 1rem;
+        
+    }
+
+    nav ul li a:hover {
+        background-color: slateblue;
+        color: #fff;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+    
+    h2 {
+        font-size: 2rem;
+    }
+    
+    h3 {
+        font-size: 1.6rem;
+    }
+    
+    main img {
+        width: 15rem;
+    }
+}
