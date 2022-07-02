@@ -563,12 +563,20 @@
     }
 
     .contact-us .con-begin h2 {
-        text-decoration: underline;
+        border-bottom: 2px solid rgb(154, 244, 244);
+        width: fit-content;
         font-size: 2rem;
+        margin-bottom: 100px;
+        margin-top: 90px;
     }
     
     .contact-us .con-begin p {
         font-size: 1.6rem;
+    }
+
+    .contact-us .con-begin section {
+        border-top: 2px solid #EBFFFE;
+        border-bottom: 2px solid #EBFFFE;
     }
 
     .contact-us .con-begin section p:nth-child(4) {
