@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Home - Temple Inn and Suites</title>
+        <link rel="stylesheet" href="css/base.css">
+        <link rel="stylesheet" href="css/small.css">
+        <link rel="stylesheet" href="css/medium.css">
+        <link rel="stylesheet" href="css/large.css">
+        <link rel="icon" href="images/favicon.ico">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative&family=Courgette&family=Finlandica:ital@1&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <header>
+            <div class="logo">
+                <a href="index.html">
+                    <img src="images/logo-img.png" alt="Logo">
+                    <div><span>Temple Inn</span> <span>& Suites</span></div>
+                </a>
+            </div>
+
+            <nav>
+                <button id="menuBtn"><span>Menu &#9776;</span><span>Close ✖</span></button>
+                <ul id="pryNav">
+                    <li><a href="index.html">Home</a></li>
+                    <li class="active"><a href="reservation.html">Reservation</a></li>
+                    <li>
+                        <a href="services.html" id="nav-service">
+                            <span>Services &#9660;</span><span>Services &#9650;</span><span>Services</span>
+                        </a>
+                        <div class="sec-div">
+                            <ul id="secNav">
+                                <li><a href="reception.html">Reception</a></li>
+                                <li><a href="missionary.html">Full-Time Temple Missionary</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li><a href="temples.html">Temples</a></li>
+                </ul>
+            </nav>
+            
+        </header>
+        <div class="way-finding"><a href="index.html"><em>HOME</em></a><span>></span><em>RESERVATION</em></div>
+        <main class="reservation">
+            <h2>Reservation</h2>
+            <div class="res-abt">
+                <h3>Make Your Reservation</h3>
+                <p>
+                    Your are welcome to make your reservation with us right now
+                </p>
+                <div class="service-icon">
+                    <div class="free-serve">
+                        <img class="free-image" src="images/430091_coffee_cup_drink_icon.svg" alt="Breakfaest">
+                        <p>Free Breakfast</p>
+                    </div>
+                    <div class="free-serve">
+                        <img class="free-image" src="images/6643361_cardio_diet_exercise_fitness_running_icon.svg" alt="Exercise">
+                        <p>Work Out Room</p>
+                    </div>
+                    <div class="free-serve">
+                        <img class="free-image" src="images/415888_complex-facilities_indoor_pool_swiming_icon.svg" alt="Indoor Pool">
+                        <p>Indoor Pool</p>
+                    </div>
+                    <div class="free-serve-d">
+                        <div class="free-image">
+                            <img src="images/2931144_connect_internet_signal_wifi_wireless_icon.svg" alt="WiFi">
+                            <img src="images/8961163_smart tv_television_smart home_monitor_icon.svg" alt="Smart TV">
+                        </div>
+                        <p>WiFi High Speed Internet and Smart Tv</p>
+                    </div>
+                    <div class="free-serve">
+                        <img class="free-image" src="images/751082_parking_car_packing_sign_vehicle_icon.svg" alt="Parking">
+                        <p>Parking</p>
+                    </div>
+                    <div class="free-serve">
+                        <img class="free-image" src="images/4047283_air_airline_airport_airways_bus_icon.svg" alt="Temple Shuttle">
+                        <p>Temple Shuttle</p>
+                    </div>
+                    <div class="free-serve-d" id="last">
+                        <div class="free-image">
+                            <img src="images/7055165_meeting_consultation_partnership_communication_brainstorm_icon.svg" alt="Consultation">
+                            <img src="images/2124233_card_essential_app_credit_icon.svg" alt="Card">
+                        </div>
+                        <p>Family History Consultation and Family Ordinance Card Service</p>
+                    </div>
+                </div>
+                <form method="get" action="thankyou.html">
+                    <div class="booking">
+                        <label for="fname">Full Names<span>*</span></label>
+                        <input type="text" name="fname" id="fname" required>
+                        <img src="images/check_circle_black_24dp.svg" alt="check">
+                        <img src="images/info_black_24dp.svg" alt="info">
+                    </div>
+                    <div class="booking">
+                        <label for="mail">Email<span>*</span></label>
+                        <input type="email" name="mail" id="mail" required>
+                        <img src="images/check_circle_black_24dp.svg" alt="check">
+                        <img src="images/info_black_24dp.svg" alt="info">
+                    </div>
+                    <div class="booking">
+                        <label for="phone">Phone Number<span>*</span></label>
+                        <input type="tel" name="phone" id="phone" pattern="+[0-9-]+[0-9-]{3}+[0-9-]{3}+[0-9]+" required>
+                        <img src="images/check_circle_black_24dp.svg" alt="check">
+                        <img src="images/info_black_24dp.svg" alt="info">
+                    </div>
+                    <div class="booking">
+                        <label for="room">Room Type</label>
+                        <input required type="text" name="room" id="room" minlength="4" maxlength="10" title="Minimum of 4 characters, maximum of 10">
+                        <img src="images/check_circle_black_24dp.svg" alt="check">
+                        <img src="images/info_black_24dp.svg" alt="info">
+                    </div>
+                    <div class="booking">
+                        <label for="rnum">Room Number</label>
+                        <input type="number" name="rnum" id="rnum" min="1" max="20">
+                        <img src="images/check_circle_black_24dp.svg" alt="check">
+                        <img src="images/info_black_24dp.svg" alt="info">
+                    </div>
+                    <div class="booking">
+                        <label for="date">Date</label>
+                        <input type="date" name="date" id="date">
+                        <img src="images/check_circle_black_24dp.svg" alt="check">
+                        <img src="images/info_black_24dp.svg" alt="info">
+                    </div>
+                    <div class="booking">
+                        <label for="location">Location</label>
+                        <input type="text" name="location" id="location">
+                        <img src="images/check_circle_black_24dp.svg" alt="check">
+                        <img src="images/info_black_24dp.svg" alt="info">
+                    </div>
+                    <div class="booking">
+                        <label for="state">Home State</label>
+                        <input type="text" name="state" id="state">
+                        <img src="images/check_circle_black_24dp.svg" alt="check">
+                        <img src="images/info_black_24dp.svg" alt="info">
+                    </div>
+                    <div class="booking">
+                        <label for="country">Country</label>
+                        <input type="text" name="country" id="country" pattern="[A-Za-z\d\.]{6, 12}" title="Must include country code" placeholder="Country-CD">
+                        <img src="images/check_circle_black_24dp.svg" alt="check">
+                        <img src="images/info_black_24dp.svg" alt="info">
+                    </div>
+                    <div class="booking">
+                        <label for="comment">Special Accomodation Requests / Comments?</label>
+                        <textarea name="comment" id="comment" cols="30" rows="10" placeholder="Write your message here..."></textarea>
+                    </div>
+                    <div class="booking" id="submit">
+                        <input type="submit" value="Book My Reservation" id="country">
+                    </div>
+                </form>
+            </div>
+        </main>
+
+        <footer>
+            <div class="contact">
+                <a href="index.html">
+                    <img src="images/logo-img.png" alt="Logo">
+                    <div><span>Temple Inn</span> <span>& Suites</span></div>
+                </a>
+                <div class="mail">
+                    <h4>Email</h4>
+                    <p>You can reach us by email at <em>jineepinee@gmail.com</em>.</p>
+                </div>
+                <div class="phone">
+                    <h4>Phone</h4>
+                    <p>We are available 24/7 if you want to talk on <br> <strong>📞+234 703 804 9456</p></strong></p>
+                </div>
+                <div class="address">
+                    <h4>Contact Address</h4>
+                    <p>
+                        4800 Montgomery Ln #300, Bethesda, MD 20814.
+                    </p>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3101.404837028496!2d-77.09772048512063!3d38.98325594948458!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b7c97b6b8f21f1%3A0x9a0b3cde14da0a60!2s4800%20Montgomery%20Ln%20%23300%2C%20Bethesda%2C%20MD%2020814%2C%20USA!5e0!3m2!1sen!2sng!4v1657530885341!5m2!1sen!2sng" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                    <div class="map"></div>
+                </div>
+                <div class="social-media">
+                    <h4>Social Media Links</h4>
+                    <div class="soc-med-img">
+                        <a href="https://www.facebook.com"><img src="images/icons8-facebook-circled-144.svg" alt="Facebook"></a>
+                        <a href="https://www.twitter.com"><img src="images/icons8-twitter-144.svg" alt="Twitter"></a>
+                        <a href="https://www.instagram.com"><img src="images/icons8-instagram-100.svg" alt="Twitter"></a>
+                    </div>
+                </div>
+            </div>
+            <p class="copyright">&copy; <span class="year"></span> .:|:. Omachona God'spower Richard .:|:. WDD230</p>
+            <p>Last Updated: <span class="last-updated"></span></p>
+        </footer>
+        <script src="js/scripts.js"></script>
+    </body>
+</html>

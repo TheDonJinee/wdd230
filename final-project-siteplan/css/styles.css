@@ -1,0 +1,402 @@
+body {
+    width: 100%;
+    margin: 0 auto;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Cinzel Decorative', cursive;
+    color: #090;
+}
+
+h1 {
+    color: #fff;
+    font-size: 2rem;
+}
+
+h2 {
+    font-size: 1.8rem;
+    border-top: 1px solid #777;
+    border-bottom: 1px solid #777;
+    width: fit-content;
+    padding: .8rem 0;
+}
+
+h3 {
+    font-size: 1.6rem;
+}
+
+p, li, a {
+    line-height: 2rem;
+    font-family: 'Finlandica', sans-serif;
+}
+
+main section.logo {
+    font-family: 'Splash', cursive;
+}
+
+header {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    height: 150px;
+    border-radius: 30px 30px 0 0;
+    margin: 0;
+    width: 100%;
+}
+
+header h1 {
+    padding-top: 60px;
+}
+
+nav {
+    margin-top: 20px;
+    padding: 0;
+}
+
+nav button {
+    width: 10rem;
+    padding: .5rem 0;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 20px;
+    cursor: pointer;
+    background-color: #999;
+    color: #fff;
+    border: none;
+    margin-bottom: 20px;
+}
+
+nav button:hover {
+    background-color: #000;
+    color: #999;
+}
+
+nav button span:nth-child(2) {
+    display: none;
+}
+
+nav ul {
+    display: none;
+    margin: 0;
+    list-style-type: none;
+    border-top: 1px solid rgba(0,0,0,0.3);
+    padding-left: 0;
+    padding: 0;
+    background-color: #999;
+}
+
+nav ul li {
+    font-size: 1.2rem;
+    text-align: center;
+    border-bottom: 1px solid rgba(0,0,0,0.3);
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    padding: .4rem 0;
+    cursor: pointer;
+}
+
+nav ul li a:hover {
+    color: #999;
+    background-color: #fff;
+}
+
+nav ul.open {
+    display: block;
+}
+
+nav ul li.active {
+    background-color: #666;
+}
+
+nav ul li.active a {
+    text-decoration: underline;
+}
+
+nav button.open span:nth-child(1) {
+    display: none;
+}
+
+nav button.open span:nth-child(2) {
+    display: block;
+}
+
+main {
+    min-height: 400px;
+}
+
+main section {
+    border: 1px solid #999;
+    padding: 20px;
+    margin: 30px 0;
+    box-shadow: 5px 5px 10px #999;
+}
+
+main.home section:nth-child(5) {
+    border: 1px solid #999;
+    padding: 20px;
+    margin: 30px 0;
+    box-shadow: 5px 5px 10px #999;
+    
+}
+
+main.home section:nth-child(5) div {
+    display: flex;
+    align-items: baseline;
+}
+
+main.home section:nth-child(5) span:nth-child(2) {
+    color: #009;
+}
+
+main.home section:nth-child(5) span:nth-child(1) {
+    color: #500;
+}
+
+main.home section:nth-child(5) .logo {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+main.home section:nth-child(5) img {
+    width: 4rem;
+}
+
+.logo-sec .logo {
+    font-family: 'Courgette', cursive;
+    z-index: 2;
+    width: 100%;
+    margin: 10px auto;
+}
+
+.logo-sec .logo a {
+    display: flex;
+    text-decoration: none;
+    align-items: flex-end;
+    width: fit-content;
+    margin: 0 auto;
+}
+
+.logo-sec .logo a div {
+    display: flex;
+    flex-direction: column;
+    font-weight: 600;
+    margin: 0 0 0 10px;
+    
+}
+
+.logo-sec a img {
+    width: 100px;
+}
+
+.logo-sec a div span:nth-child(1) {
+    font-size: 2rem;
+    color:  #009;
+    
+}
+
+.logo-sec a div span:nth-child(2) {
+    font-size: 2.5rem;
+    color: rgb(147, 2, 2);
+}
+
+main.target-audience {
+    padding: 20px;
+    margin: 20px 0;
+}
+
+main.target-audience section {
+    border: 1px solid #999;
+    box-shadow: 5px 5px 10px #999;
+    padding: 20px;
+}
+
+main.target-audience section img {
+    width: 100%;
+}
+
+main.target-audience section.personas div {
+    width: 60%;
+    margin: 20px auto;
+    border: 1px solid #888;
+    border-radius: 50px;
+    /* padding: 20px; */
+}
+
+main.target-audience section.personas div img {
+    border-radius: 50px 50px 0 0;
+    margin: 0;
+    height: 450px;
+}
+
+main.target-audience section.personas div ul {
+    padding: 20px;
+}
+
+main.target-audience section.personas div ul li{
+    margin: 20px;
+}
+
+main.content-architcture .map img {
+    width: 100%;
+}
+
+table {
+    width: 80%;
+    margin: 0 auto;
+    border-collapse: collapse;
+}
+
+table tr td {
+    border: 1px solid #000;
+    padding: .5rem 1rem;
+    text-align: center;
+}
+
+main.color section.col table tr:nth-child(2) td {
+    background-color: #999;
+    color: #fff;
+}
+
+main.color section.col table tr:nth-child(5) td {
+    background-color: #090;
+    color: #fff;
+}
+
+main.color section.col table tr:nth-child(6) td {
+    background-color: #000;
+    color: #fff;
+}
+
+main.color section.col table tr:nth-child(7) td,
+main.color section.col table tr:nth-child(8) td {
+    background-color: #777;
+    color: #fff;
+}
+
+main.color section.col table tr:nth-child(9) td {
+    background-color: #000;
+    color: #fff;
+}
+
+main.color section.fonts table tr:nth-child(1) td {
+    font-family: 'Cinzel Decorative', cursive;
+    color: #090;
+    background-color: rgb(236, 236, 236);
+}
+
+main.color section.fonts table tr:nth-child(2) td {
+    font-family: 'Finlandica', sans-serif;
+    color: #000;
+    background-color: rgb(195, 195, 195);
+}
+
+main.color section.navigation ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-evenly;
+    width: 50%;
+    margin: 0 auto;
+}
+
+main.color section.navigation ul li {
+    font-size: 1.4rem;
+    padding: 20px;
+    border-right: 1px solid #777;
+    margin: 0;
+    cursor: pointer;
+}
+
+main.color section.navigation ul li:nth-child(1) {
+    border-left: 1px solid #777;
+}
+
+main.color section.navigation ul li:hover {
+    background-color: #777;
+    color: #fff;
+}
+
+main.color section.responsive div {
+    margin: 100px auto;
+    border: 1px solid #777;
+    padding: 20px;
+}
+
+main.color section.responsive div img {
+    width: 100%;
+}
+
+main.color section.responsive .medium div {
+    width: 60%;
+    border: none;
+}
+
+main.color section.responsive .medium img {
+    width: 100%;
+    height: 30%;
+    margin: 0 auto;
+}
+
+main.color section.responsive .medium img:nth-child(6) {
+    height: 100px;
+}
+
+main.color section.responsive .small {
+    display: flex;
+    flex-direction: column;
+    margin: 80px 0;
+}
+
+main.color section.responsive .small img {
+    width: 30%;
+    height: 20%;
+    margin: 0 auto;
+}
+
+figcaption {
+    font-size: .8rem;
+    color: #888;
+    margin-top: 20px;
+}
+
+footer {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    height: auto;
+    border-radius: 0 0 30px 30px;
+    margin: 0;
+    padding: 20px;
+}
+
+@media only screen and (min-width: 60em) {
+    body {
+        width: 60%;
+    }
+
+    #menuBtn {
+        display: none;
+    }
+
+    #pryNav {
+        display: flex;
+        justify-content: center;
+        
+    }
+
+    #pryNav li {
+        border-right: 1px solid #777;
+        
+    }
+
+    #pryNav li:nth-child(1) {
+        border-left: 1px solid #777;
+    }
+
+    #pryNav li a {
+        padding: .5rem 1.2rem;
+    }
+}

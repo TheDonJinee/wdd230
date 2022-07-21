@@ -1,0 +1,1050 @@
+body {
+    box-sizing: border-box;
+    width: 95%;
+    margin: 0 auto;
+    position: relative;
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Cinzel Decorative', cursive;
+    color: #090;
+}
+
+h2 {
+    font-size: 1.5rem;
+    border-bottom: 1px solid rgb(226, 226, 226);
+    width: fit-content;
+}
+
+h3 {
+    font-size: 1.3rem;
+    border-bottom: 1px solid rgb(208, 203, 203);
+}
+
+p, figcaption, button {
+    font-family: 'Finlandica', sans-serif;
+    font-size: .8rem;
+    line-height: 2rem;
+}
+
+figcaption {
+    color: #999;
+    font-size: .6rem;
+}
+
+header {
+    border-bottom: 2px solid #999;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    min-height: 90px;
+}
+
+header .logo {
+    font-family: 'Courgette', cursive;
+    z-index: 2;
+}
+
+header .logo a {
+    display: flex;
+    text-decoration: none;
+    align-items: flex-end;
+}
+
+header .logo a div {
+    display: flex;
+    flex-direction: column;
+    font-weight: 600;
+    margin: 0 0 0 10px;
+    
+}
+
+header .logo a img {
+    width: 60px;
+}
+
+header a div span:nth-child(1) {
+    font-size: 1.4rem;
+    color: #009;
+}
+
+header a div span:nth-child(2) {
+    font-size: 1.6rem;
+    color: rgb(147, 2, 2);
+}
+
+header nav {
+    position: absolute;
+    top: 3.2rem;
+    width: 100%;
+    text-align: end;
+    z-index: 1;
+}
+
+header nav button {
+    padding: .2rem;
+    width: 6rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+    border-radius: 15px;
+    border: 1px solid rgb(191, 190, 190);
+    cursor: pointer;
+    font-family: 'Finlandica', sans-serif;
+}
+
+header nav button:hover {
+    background-color: #888;
+}
+
+header nav button span:nth-child(1) {
+    display: block;
+}
+
+header nav button span:nth-child(2) {
+    display: none;
+}
+
+header nav ul {
+    display: none;
+    border-top: 1px solid rgba(0,0,0,0.3);
+    list-style: none;
+    padding-left: 0;
+    text-align: center;
+    background-color: #999;
+    
+}
+
+header nav ul.open {
+    display: block;
+}
+
+#menuBtn.open span:nth-child(1) {display: none;}
+#menuBtn.open span:nth-child(2) {display: block;}
+
+header nav ul li {
+    border-bottom: 1px solid rgba(0,0,0,0.3);
+    text-align: center;
+    justify-content: center;
+    /* display: block; */
+}
+
+header nav ul li a {
+    display: block;
+    padding: .4rem ;
+    color: #fff;
+    font-size: 1.2rem;
+    text-decoration: none;
+}
+
+header nav ul li a:hover {
+    background-color: #777;
+}
+
+header nav ul li.active {
+    background-color: #333;
+    text-decoration: underline;
+    border-bottom: none;
+}
+
+header nav ul#pryNav li:nth-child(3) a span:nth-child(1),
+header nav ul#pryNav li:nth-child(3) a span:nth-child(2) {
+    display: none;
+}
+
+header nav ul#pryNav li:nth-child(3) a span:nth-child(3) {
+    display: block;
+}
+
+.way-finding {
+    margin-top: 20px;
+    font-size: 1rem;
+}
+
+.way-finding a {
+    color: #888;
+    font-size: 1rem;
+}
+
+.way-finding a:hover {
+    color: #555;
+}
+
+.way-finding span {
+    margin:0 5px;
+    color: rgb(94, 94, 227);
+}
+
+main.home {
+    display: flex;
+    flex-direction: column;
+}
+
+main.home .hero {
+    margin: 40px auto;
+    border: none;
+    position: relative;
+}
+
+
+main.home .hero img {
+    width: 100%;
+}
+
+main.home .hero h2 {
+    font-size: .8rem;
+    font-weight: 900;
+    color: #fff;
+    margin: 0;
+    position: absolute;
+    top: 25px;
+    left: 15px;
+    border: none;
+}
+
+main.home .hero button {
+    color: #000;
+    position: absolute;
+    bottom: 60px;
+    right: 20px;
+    padding: .1rem;
+    border-radius: 10px;
+    border: 1px solid #900;
+    box-shadow: 5px 5px 10px #000;
+    background-color: red;
+    font-weight: 600;
+    color: #fff;
+    cursor: pointer;
+}
+
+main.home .hero button:hover {
+    background-color: #fff;
+    color: red;
+}
+
+main.home section, main.home div {
+    width: 90%;
+    margin: 20px auto;
+    border: 1px solid #999;
+    box-shadow: 5px 5px 10px #999;
+    padding: 10px;
+}
+
+main.home section.weather .weather-img {
+    background-color: #999;
+    position: relative;
+}
+
+main.home section.weather p {
+    text-align: center;
+    margin: 5px auto;
+    font-size: 1rem;
+}
+
+main.home section.weather .weather-img img {
+    width: 30%;
+}
+
+main.home section.weather .weather-img span {
+    position: absolute;
+    right: 7%;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #fff;
+    font-size: 1rem;
+}
+
+main.home .gh {
+    border: none;
+}
+
+main.home .gh img {
+    width: 100%;
+}
+
+main.home .event-img {
+    display: flex;
+    justify-content: center;
+    border: none;
+    box-shadow: none;
+    margin: 0;
+    margin-right: 0;
+}
+
+main.home .event-img img {
+    width: 100px;
+}
+
+main.home .soc-med a { 
+    text-decoration: none;
+    color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 10px auto;
+}
+
+main.home .soc-med a span {
+    font-size: .8rem;
+    border-bottom: 1px solid #777;
+}
+
+main.home .soc-med a img {
+    width: 30px;
+    
+}
+
+main.home .soc-med a:nth-child(1) {
+    flex-direction: row-reverse;
+}
+
+main.home .soc-med a:nth-child(1) span:hover {
+    color: rgb(19, 109, 226);
+    border-bottom: 1px solid rgb(19, 109, 226);
+}
+
+main.home .soc-med a:nth-child(2) span:hover {
+    color: red;
+    border-bottom: 1px solid red;
+}
+
+main.reservation .res-abt {
+    width: 100%;
+}
+
+main.reservation .res-abt .service-icon {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+    width: 100%;
+}
+
+main.reservation img {
+    width: 40px;
+    margin: 5px auto;
+}
+
+main.reservation .res-abt .service-icon .free-serve,
+main.reservation .res-abt .service-icon .free-serve-d {
+width: 100%;
+height: 6rem;
+border: 1px solid rgb(215, 215, 215);
+box-shadow: 2px 2px 10px 2px rgb(215, 215, 215);
+text-align: center;
+border-radius: 30px;
+}
+
+main.reservation .res-abt .service-icon .free-serve p,
+main.reservation .res-abt .service-icon .free-serve-d p {
+    margin: 0 auto;
+    font-size: .8rem;
+    line-height: 1rem;
+}
+
+main.reservation .res-abt .service-icon .free-serve-d:nth-child(7) {
+    grid-column: 1/-1;
+}
+
+main.reservation .res-abt form {
+    width: 100%;
+}
+
+main.reservation .res-abt {
+    width: 95%;
+    margin: 20px auto;
+    padding: 0;
+}
+
+main.reservation .res-abt h3 {
+    width: fit-content;
+}
+
+main.reservation form {
+    border-top: 1px solid rgb(228, 225, 225);
+    padding: 20px;
+    width: 100%;
+    margin: 40px auto;
+    padding: 0;
+}
+
+main.reservation form .booking label {
+    font-family: 'Finlandica', sans-serif;
+    display: block;
+    margin-bottom: .2rem;
+}
+
+main.reservation form .booking label span {
+    color: red;
+}
+
+main.reservation form .booking img {
+    width: inherit;
+    display: none;
+}
+
+main.reservation form .booking {
+    margin: .8rem 0;
+}
+
+main.reservation form .booking input,
+main.reservation form .booking textarea {
+    width: 90%;
+    border: 1px solid #999;
+    border-radius: 10px;
+    padding: .3rem .6rem;
+}
+
+main.reservation form .booking input:focus,
+main.reservation form .booking textarea:focus {
+    outline: none;
+}
+
+main.reservation form .booking input[type="submit"] {
+    background-color: #009;
+    padding: .6rem 0;
+    border-radius: 10px;
+    color: #fff;
+    cursor: pointer;
+    width: 60%;
+}
+
+main.reservation form .booking input[type="submit"]:hover {
+   background-color: rgb(9, 9, 21);
+}
+
+
+main.temples .temp-btn {
+    margin: 80px auto;
+    width: fit-content;
+}
+
+main.temples .temp-btn button {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #fff;
+    margin: 0 20px;
+    padding: .3rem 2rem;
+    border-radius: 20px;
+    border: 1px solid #555;
+    background-color: #444;
+    cursor: pointer;
+}
+
+main.temples .temp-btn button:nth-child(2) span.night {
+    filter: brightness(0) invert(1);
+}
+
+main.temples .temp-btn button:hover {
+    background-color: #000;
+}
+
+main.temples article {
+    display: block;
+}
+
+main.temples article.card section, 
+main.temples article.list section {
+    width: 100%;
+    min-height: fit-content;
+    margin: 20px 0;
+    background-color: rgb(244, 244, 244);
+    border-radius: 40px 40px 0 0;
+    position: relative;
+    margin: 80px auto;
+    padding-bottom: 40px;
+}
+
+main.temples article.card section img,
+main.temples article.list section img {
+    width: 100%;
+    height: 250px;
+    border-radius: 40px 40px 0 0;
+}
+
+main.temples article.card section h3,
+main.temples article.card section h4,
+main.temples article.list section h3,
+main.temples article.list section h4 {
+    margin-left: 10px;
+    border-bottom: 1px solid #999;
+    width: fit-content;
+}
+
+main.temples article.card section h3,
+main.temples article.list section h3 {
+    margin-top: 30px;
+}
+
+main.temples article.card section h4,
+main.temples article.list section h4 {
+    margin-bottom: 10px;
+}
+
+main.temples article.card section p:nth-child(6),
+main.temples article.list section p:nth-child(6) {
+    text-align: center;
+}
+
+main.temples article.card section p,
+main.temples article.list section p {
+    padding: 5px 20px;
+    margin: 0;
+    font-size: .8rem;
+    line-height: 1.2rem;
+}
+
+main.temples article.card button,
+main.temples article.list button {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+
+main.temples article.card button span,
+main.temples article.list button span {
+    font-size: 1.9rem;
+    cursor: pointer;
+    /* display: none; */
+}
+
+main.temples article.card button span:nth-child(1),
+main.temples article.list button span:nth-child(1) {
+    display: block;
+}
+
+main.thanks {
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+    text-align: center;
+}
+
+main.thanks h2 {
+    margin: 20px auto;
+}
+main.thanks p {
+    text-align: center;
+}
+
+main.thanks img {
+    border-radius: 20px;
+    width: 50%;
+    box-shadow: 10px 10px 10px #000;
+}
+
+main.temples article.card section:nth-child(1) p:nth-child(19),
+main.temples article.card section:nth-child(1) p:nth-child(20),
+main.temples article.card section:nth-child(1) p:nth-child(26),
+main.temples article.card section:nth-child(1) p:nth-child(27),
+main.temples article.card section:nth-child(2) p:nth-child(19),
+main.temples article.card section:nth-child(2) p:nth-child(20),
+main.temples article.card section:nth-child(2) p:nth-child(26),
+main.temples article.card section:nth-child(2) p:nth-child(27),
+main.temples article.card section:nth-child(3) p:nth-child(19),
+main.temples article.card section:nth-child(3) p:nth-child(20),
+main.temples article.card section:nth-child(3) p:nth-child(26),
+main.temples article.card section:nth-child(3) p:nth-child(27) {
+    display: none;
+}
+
+main.temples article.card section:nth-child(4) p:nth-child(20),
+main.temples article.card section:nth-child(4) p:nth-child(21),
+main.temples article.card section:nth-child(4) p:nth-child(22),
+main.temples article.card section:nth-child(4) p:nth-child(23),
+main.temples article.card section:nth-child(4) p:nth-child(24),
+main.temples article.card section:nth-child(4) p:nth-child(25),
+main.temples article.card section:nth-child(4) p:nth-child(26),
+main.temples article.card section:nth-child(4) p:nth-child(27) {
+    display: none;
+}
+
+main.temples article.list section:nth-child(1),
+main.temples article.list section:nth-child(3) {
+    min-height: fit-content;
+    padding-bottom: 80px;
+    background-color: #000;
+    color: #fff;
+    border-radius: 40px 0 40px 0;
+}
+
+main.temples article.list section:nth-child(1) img,
+main.temples article.list section:nth-child(3) img {
+    width: 100%;
+    border-radius: 40px 0 0 0;
+}
+
+main.temples article.list section:nth-child(2),
+main.temples article.list section:nth-child(4) {
+    min-height: fit-content;
+    padding-bottom: 80px;
+    background-color: #000;
+    color: #fff;
+    border-radius: 0 40px 0 40px;
+}
+
+main.temples article.list section:nth-child(2) img,
+main.temples article.list section:nth-child(4) img {
+    width: 100%;
+    border-radius: 0 40px 0 0;
+}
+
+main.temples article.list span {
+    bottom: 20px;
+    right: 50%;
+    transform: translateX(-50%);
+    font-size: 40px;
+}
+
+main.temples article.list h3,
+main.temples article.list h4 {
+    color: #fff;
+}
+
+main.temples article.list section:nth-child(1) p:nth-child(19),
+main.temples article.list section:nth-child(1) p:nth-child(20),
+main.temples article.list section:nth-child(1) p:nth-child(26),
+main.temples article.list section:nth-child(1) p:nth-child(27),
+main.temples article.list section:nth-child(2) p:nth-child(19),
+main.temples article.list section:nth-child(2) p:nth-child(20),
+main.temples article.list section:nth-child(2) p:nth-child(26),
+main.temples article.list section:nth-child(2) p:nth-child(27),
+main.temples article.list section:nth-child(3) p:nth-child(19),
+main.temples article.list section:nth-child(3) p:nth-child(20),
+main.temples article.list section:nth-child(3) p:nth-child(26),
+main.temples article.list section:nth-child(3) p:nth-child(27) {
+    display: none;
+}
+
+main.temples article.list section:nth-child(4) p:nth-child(20),
+main.temples article.list section:nth-child(4) p:nth-child(21),
+main.temples article.list section:nth-child(4) p:nth-child(22),
+main.temples article.list section:nth-child(4) p:nth-child(23),
+main.temples article.list section:nth-child(4) p:nth-child(24),
+main.temples article.list section:nth-child(4) p:nth-child(25),
+main.temples article.list section:nth-child(4) p:nth-child(26),
+main.temples article.list section:nth-child(4) p:nth-child(27) {
+    display: none;
+}
+
+main.services p, main.services li {
+    font-size: .8rem;
+}
+
+main.services .special-services {
+    width: 90%;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+main.services picture img {
+    width: 100%;
+}
+
+main.services  ul {
+    background-color: rgb(255, 246, 246);
+    list-style-type: circle;
+}
+
+main.services div {
+    width: 100%;
+}
+
+main.services div img {
+    width: 80%;
+}
+
+main.services ul li {
+    line-height: 2rem;
+    color: #444;
+    margin: 10px 0;
+}
+
+main.services .free-amenity h3 {
+    margin-top: 50px;
+}
+
+main.services p {
+    margin-top: 50px;
+    color: #777;
+}
+
+main.reception {
+    width: 95%;
+    margin: 40px auto;
+}
+
+main.reception li {
+    font-family: 'Finlandica', sans-serif;
+}
+
+main.reception .reception-pic {
+    width: 100%;
+    height: 100px;
+    border: 10px solid #773303;
+}
+
+main.reception .wedding {
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+    border-radius: 20px;
+}
+
+main.reception .wedding img {
+    width: 100%;
+    height: 120px;
+    margin: 0;
+    border-radius: 20px;
+}
+
+main.reception .wedding h3 {
+    position: absolute;
+    top: 15%;
+    right: 20%;
+    padding-bottom: 0;
+    color: white;
+    text-shadow: 2px 2px 5px #000;
+    font-size: 1.4rem;
+    border-bottom: none;
+}
+
+main.reception .venue-opt {
+    display: block;
+    margin: 0 auto;
+}
+
+main.reception .venue-opt.one {
+    margin-top: 50px;
+}
+
+main.reception .venue-opt.one h4 {
+    text-align: end;
+}
+
+main.reception .venue-opt img {
+    padding: 5px;
+    border: 1px solid #555;
+    box-shadow: 2px 2px 10px #888;
+    border-radius: 20px;
+    width: 200px;
+}
+
+main.reception .venue-opt.two {
+    margin-bottom: 50px;
+}
+
+main.reception .venue-opt.two img{
+    display: block;
+    margin: 0 auto;
+}
+
+main.reception .venue-opt.one img{
+    display: block;
+    margin: 0 auto;
+}
+
+main.reception .venue-opt .opt-text{
+    width: 100%;
+    margin: 0;
+}
+
+main.reception .food {
+    position: relative;
+    width: 100%;
+    border-radius: 20px;
+    margin: 0 auto;
+    margin-top: 150px;
+}
+
+main.reception .food h3 {
+    position: absolute;
+    font-size: 1.1rem;
+    top: 35%;
+    border: none;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+    text-shadow: 2px 2px 5px #000;
+}
+
+main.reception .food-opt h4 {
+    text-align: center;
+}
+
+main.reception .food img {
+    width: 100%;
+    border-radius: 20px;
+    height: 150px;
+    
+}
+
+main.reception .food-opt img {
+    padding: 5px;
+    padding-bottom: 20px;
+    border: 1px solid #555;
+    box-shadow: 2px 2px 10px #888;
+    background-color: rgb(248, 247, 247);
+    width: 200px;
+    display: block;
+    margin: 30px auto;
+}
+
+main.reception .food-opt {
+    display: block;
+    margin:20px auto;
+}
+
+main.missionary p,
+main.missionary li {
+    font-size: .8rem;
+    line-height: 1.2rem;
+}
+
+main.missionary h4 {
+    text-align: center;
+    font-size: 1.6rem;
+    margin-bottom: 10px;
+}
+
+main.missionary img.missionary-banner {
+    width: 100%;
+}
+
+main.missionary div {
+    margin: 30px 0;
+}
+
+main.missionary .lodge-img {
+    margin: 0 auto;
+    width: 200px;
+    border-radius: 20px;
+    box-shadow: 2px 2px 10px 2px #999;
+}
+
+main.missionary .lodge-img img {
+    width: 100%;
+    border-radius: 20px ;
+}
+
+main.missionary .form {
+    position: relative;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    height: 180px;
+}
+
+main.missionary .form img {
+    width: 100%;
+    height: 100%;
+}
+
+main.missionary .form form {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(2, 1fr);
+    position: absolute;
+    top: 47%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+}
+
+main.missionary .form form h4 {
+    grid-column: 1/-1;
+    color: #fff;
+    text-shadow: 2px 2px 5px 2px #000;
+    font-size: 1rem;
+    margin: 0;
+}
+
+main.missionary .form form .book-now {
+    margin: 0 5px;
+    display: block;
+    padding: 0;
+}
+
+main.missionary .form form .book-now label {
+    display: block;
+    color: #fff;
+    padding: .2rem;
+    font-size: .8rem;
+    text-shadow: 2px 2px 2px #000;
+}
+
+main.missionary .form form .book-now label span {
+    color: red;
+}
+
+main.missionary .form form .book-now input {
+    flex-basis: 100%;
+    background-color: rgb(226, 218, 218);
+    box-shadow: 2px 2px 5px 2px #000;
+    border: 1px solid #fff;
+    border-radius: 10px;
+    padding: .2rem;
+    font-size: .8rem;
+    width: 100%;
+}
+
+main.missionary .form form .book-now input:hover {
+    background-color: rgb(189, 189, 189);
+}
+
+main.missionary .form form .book-now input:focus {
+    outline: none;
+}
+
+
+main.missionary .form form input.bookBtn {
+    grid-column: 1/-1;
+    font-size: .8rem;
+    width: 80%;
+    padding: .2rem 0;
+    margin: 0 auto;
+    border-radius: 40px;
+    border: 1px solid red;
+    background-color: red;
+    color: #fff;
+    box-shadow: 2px 2px 5px 2px  #000;
+    cursor: pointer;
+}
+
+main.missionary .form form input.bookBtn:hover {
+    background-color: #fff;
+    color: red;
+    border: 1px solid #fff;
+}
+
+
+
+
+footer {
+    border-top: 2px solid #999;
+    width: 95%;
+    margin: 40px auto;
+}
+
+footer a {
+    display: flex;
+    text-decoration: none;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+footer a div {
+    display: flex;
+    flex-direction: column;
+    font-weight: 600;
+    margin: 0 0 0 10px;
+}
+
+footer a div img {
+    width: 100%;
+}
+
+footer a div span:nth-child(1) {
+    font-size: 1.6rem;
+    color: #009;
+}
+
+footer a div span:nth-child(2) {
+    font-size: 2rem;
+    color: rgb(147, 2, 2);
+}
+
+footer div {
+    margin-top: 40px;
+}
+
+footer div {
+    text-align: center;
+}
+
+footer .mail h4 {
+    border-bottom: rgba(153, 0, 0, 0.296) 1px solid;
+    padding-bottom: 10px;
+    text-align: center;
+    width: 40%;
+    margin: 0 auto;
+}
+
+footer .mail p {
+    padding: 0 1rem;
+}
+
+footer em {
+    color: darkblue;
+}
+
+footer .phone h4 {
+    border-bottom: rgba(54, 153, 0, 0.56) 1px solid;
+    padding-bottom: 10px;
+    text-align: center;
+    width: 60%;
+    margin: 0 auto;
+}
+
+footer .phone p {
+    padding: 0 1rem;
+}
+
+footer .address h4 {
+    border-bottom: rgba(0, 71, 153, 0.296) 1px solid;
+    padding-bottom: 10px;
+    text-align: center;
+    width: 80%;
+    margin: 0 auto;
+}
+
+footer .address iframe {
+    width: 80%;
+    height: 200px;
+}
+
+footer .social-media h4 {
+    border-bottom: rgba(20, 0, 153, 0.296) 1px solid;
+    padding-bottom: 10px;
+    text-align: center;
+    width: 100%;
+    margin: 0 auto;
+}
+
+footer .social-media img {
+    width: 50px;
+}
+
+footer .social-media .soc-med-img {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 10px;
+}
+
+footer h4 {
+    margin: 0;
+}
+
+footer p {
+    margin: 5px auto;
+    text-align: center;
+}
+
+footer p.copyright {
+    margin-top: 40px;
+}
+
+[data-theme="light"] {
+    --main-color: #dfdad8;
+    --sec-color: #202527;
+    --third-color: #6e6e65;
+    --one--color: #acf2be4d;
+    --two--color: #fdb8c052;
+    }
+    
+[data-theme="dark"] {
+     --main-color: #6e6e65;
+     --sec-color: #f5f5f5;
+     --third-color: #202527;
+     --one--color: #acf2bd;
+     --two--color: #fdb8c0;
+}

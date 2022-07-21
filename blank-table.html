@@ -6,57 +6,66 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Forms Practice</title>
   <link rel="stylesheet" href="minimal-table.css">
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>  
 </head>
 <body>
   
-  <form action="/chamber/thankyou.html">
-    <div class="form-box">
-      <label for="name">Name*: </label>
-      <input type="text" name="name" maxlength="20" required pattern="[A-Za-z]" placeholder="Last Name First...">
+  <div class="container">
+    <div class="header">
+      <h2>Create Account</h2>
     </div>
-    <div class="form-box">
-      <label for="address">Address: </label>
-      <input type="text" placeholder="Where do you live?" value="address" name="address"></label>
-    </div>
-    <div class="form-box">
-      <label for="mail">Email*: </label>
-      <input name="mail" type="email" required placeholder="you@youremail.com" value="email"></label>
-    </div>
-    <div class="form-box">
-      <label for="phone">Phone*: </label>
-      <input type="tel" name="phone" required pattern="[0-9]-"></label>
-    </div>
-    <div class="form-box">
-      <label for="age">Age*: </label>
-      <input type="number" name="age" min="18" max="45" required></label>
-    </div>
-    <div class="level">
-      <label class="lev">Level</label>
-      <label class="rad"><input name="level" type="radio"> Beginner</label>
-      <label class="rad"><input name="level" type="radio"> Intermediate</label>
-      <label class="rad"><input name="level" type="radio"> Expert</label>
-    </div>
-
-    <fieldset>
-      <legend>Business Information</legend>
-      <div>
-        <label for="bname" class="top">Business Name: </label>
-        <input type="text" name="bname" required>
+    <form action="" class="form" id="form">
+      <div class="form-control sucess">
+        <label for="username">Username</label>
+        <input type="text" id="username" placeholder="florinpop17">
+        <i><img src="/final-project/images/info_black_24dp.svg" alt="icon" class="error"></i>
+        <i><img src="/final-project/images/check_circle_black_24dp.svg" alt="icon" class="check"></i>
+        <small>Error Message</small>
       </div>
-      <div>
-        <label for="btitle" class="top">Business Title: </label>
-        <input name="btitle" type="text" placeholder="Business Position" pattern="[A-Z]"></label>
+      <div class="form-control errors">
+        <label for="email">Email</label>
+        <input type="email" id="email" placeholder="jinee@you.com">
+        <i><img src="/final-project/images/info_black_24dp.svg" alt="icon" class="error"></i>
+        <i><img src="/final-project/images/check_circle_black_24dp.svg" alt="icon" class="check"></i>
+        <small>Error Message</small>
       </div>
-      <div>
-        <label for="bdescriptiion" class="top">Business Description: </label>
-        <textarea name="bdescription" cols="30" rows="10" placeholder="Describe your business here..."></textarea></label>
+      <div class="form-control">
+        <label for="password">Password</label>
+        <input type="password" id="password" placeholder="password">
+        <i><img src="/final-project/images/info_black_24dp.svg" alt="icon" class="error"></i>
+        <i><img src="/final-project/images/check_circle_black_24dp.svg" alt="icon" class="check"></i>
+        <small>Error Message</small>
       </div>
-  </fieldset>
-
-  <div class="form-box">
-    <input class="goBtn" type="submit" value="Send">
+      <div class="form-control">
+        <label for="password2">Password Check</label>
+        <input type="password" id="password2" placeholder="Enter password again">
+        <i><img src="/final-project/images/info_black_24dp.svg" alt="icon" class="error"></i>
+        <i><img src="/final-project/images/check_circle_black_24dp.svg" alt="icon" class="check"></i>
+        <small>Error Message</small>
+      </div>
+      <button>Submit</button>
+    </form>
   </div>
-  </form>
+  <script>
+    const form = document.querySelector('#form');
+    const username = document.querySelector('#username');
+    const email = document.querySelector('#email');
+    const password = document.querySelector('#password');
+    const password2 = document.querySelector('#password2');
 
+    form.addEventListener('submit', (e) => {
+      e.preventDefault();
+
+      chechInputs();
+    });
+
+    function chechInputs() {
+      const formValue = form.value.trim()
+      const usernameValue = username.value.trim()
+      const emailValue = email.value.trim()
+      const passwordValue = password.value.trim()
+      const password2Value = password2.value.trim()
+    }
+  </script>
 </body>
 </html>

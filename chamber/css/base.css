@@ -12,6 +12,7 @@ header {
     background-color: #000;
     color: #EBFFFE;
     position: relative;
+    min-height: 115px;
 }
 
 header nav {
@@ -90,9 +91,14 @@ header .logo {
     padding-left: 10px;
     position: relative;
     left: 2rem;
-    width: fit-content;
+    width: 40%;
+    max-height: 75px;
     top: .5rem;
     z-index: 2;
+    /* border: 1px solid #fff; */
+    display: grid;
+    grid-template-columns: 40% 1fr;
+    margin-bottom: 10px;
 }
 
 header .logo a {
@@ -103,12 +109,12 @@ header .logo a {
 header .logo a h1 {
     color: #EBFFFE;
     margin: 15px 0 0 5px;
-    font-size: 1.2rem;
+    font-size: 1rem;
 }
 
 header .logo a img {
-    max-width: 5rem;
     width: 100%;
+    max-height: 77px;
 }
 
 header .social {
@@ -126,6 +132,11 @@ header .social img {
     margin: 0 5px;
 }
 
+header .date {
+    width: 100%;
+    border: 1px solid #EBFFFE;
+}
+
 .container .first {
     display: grid;
     grid-template-rows: 250px 250px 250px 250px 500px;
@@ -134,6 +145,7 @@ header .social img {
     width: fit-content;
     margin: 10px auto;
     background-color: steelblue;
+    height: fit-content;
 }
 
 .container .first p {
@@ -158,18 +170,18 @@ header .social img {
 
 .container .first .hero a {
     border: 1px solid #fff;
-    padding: 13px;
-    width: 150px;
+    padding: 9px 6px;
+    width: fit-content;
     text-decoration: none;
     color: #EBFFFE;
     background-color: red;
     position: absolute;
     bottom: 20px;
-    border-radius: 5px;
+    border-radius: 20px;
     box-shadow: 5px 5px 5px #000;
     cursor: pointer;
-    right: 10px;
-    font-size: 1rem;
+    right: 20px;
+    font-size: .8rem;
     font-weight: 600;
 }
 
@@ -210,6 +222,11 @@ header .social img {
     background-color: darkblue;
     color: #EBFFFE;
     text-align: center;
+    padding: 20px;
+}
+
+.container .first .weathers .condition {
+    border-bottom: 1px solid #EBFFFE;
 }
 
 .container .first .news {
@@ -237,6 +254,7 @@ header .social img {
     text-align: center;
     display: flex;
     flex-direction: column;
+    height: fit-content;
 }
 
 .container .first .spot .spot1 {

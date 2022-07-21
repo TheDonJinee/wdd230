@@ -1,0 +1,36 @@
+@media only screen and (min-width: 20.375em) {
+    p, a, figcaption {
+        font-size: 1rem;
+    }
+
+    h3 {
+        font-size: 1.4rem;
+    }
+
+    h4 {
+        font-size: 1.2rem;
+    }
+
+    main.home .soc-med a span {
+        font-size: 1rem;
+    }
+
+    main.home .soc-med a img {
+        width: 50px;
+    }
+    
+    main.home section.weather .weather-img img {
+        width: 80px;
+    }
+    
+    main.home section.weather .weather-img span {
+        position: absolute;
+        right: 20%;
+        top: 50%;
+        transform: translateY(-50%);
+        color: #fff;
+        font-size: 1.2rem;
+    }
+
+    
+}
