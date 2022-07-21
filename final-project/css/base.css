@@ -497,11 +497,15 @@ main.temples article.list button {
     position: absolute;
     bottom: 10px;
     right: 10px;
+    background: transparent;
+    border: none;
+    color: blue;
+    
 }
 
 main.temples article.card button span,
 main.temples article.list button span {
-    font-size: 1.9rem;
+    font-size: 3rem;
     cursor: pointer;
     /* display: none; */
 }
