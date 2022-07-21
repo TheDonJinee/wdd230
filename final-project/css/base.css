@@ -677,7 +677,9 @@ main.reception li {
 }
 
 main.reception .reception-pic {
-    width: 100%;
+    display: block;
+    width: fit-content;
+    margin: 10px auto;
     height: 100px;
     border: 10px solid #773303;
 }
@@ -698,8 +700,11 @@ main.reception .wedding img {
 
 main.reception .wedding h3 {
     position: absolute;
-    top: 15%;
-    right: 20%;
+    top: 30%;
+    left: 50%;
+    width: 100%;
+    text-align: center;
+    transform: translate(-50%, -50%);
     padding-bottom: 0;
     color: white;
     text-shadow: 2px 2px 5px #000;
