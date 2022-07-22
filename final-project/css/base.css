@@ -246,11 +246,11 @@ main.home section.weather .weather-img img {
 
 main.home section.weather .weather-img span {
     position: absolute;
-    right: 7%;
+    right: 2%;
     top: 50%;
     transform: translateY(-50%);
     color: #fff;
-    font-size: 1rem;
+    font-size: .8rem;
 }
 
 main.home .gh {
