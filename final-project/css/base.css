@@ -939,6 +939,7 @@ footer a {
     text-decoration: none;
     align-items: flex-end;
     justify-content: center;
+    font-family: 'Courgette', cursive;
 }
 
 footer a div {
