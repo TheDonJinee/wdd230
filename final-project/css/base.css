@@ -828,11 +828,13 @@ main.missionary .lodge-img {
     width: 200px;
     border-radius: 20px;
     box-shadow: 2px 2px 10px 2px #999;
+    height: 135px;
 }
 
 main.missionary .lodge-img img {
     width: 100%;
-    border-radius: 20px ;
+    border-radius: 20px;
+    height: 100%;
 }
 
 main.missionary .form {
