@@ -118,13 +118,13 @@ function displayWeatherInfo (weatherData) {
         forecast2.innerHTML = `Saturdayay: ${weatherData.daily[6].temp.day}&deg;F`;
         forecast3.innerHTML = `Sunday: ${weatherData.daily[0].temp.day}&deg;F`;
     } else if (getThisDay === 5) {
-        forecast1.innerHTML = `Day: ${weatherData.daily[6].temp.day}&deg;F`;
-        forecast2.innerHTML = `Day: ${weatherData.daily[0].temp.day}&deg;F`;
-        forecast3.innerHTML = `Day: ${weatherData.daily[1].temp.day}&deg;F`;
+        forecast1.innerHTML = `Saturday: ${weatherData.daily[6].temp.day}&deg;F`;
+        forecast2.innerHTML = `Sunday: ${weatherData.daily[0].temp.day}&deg;F`;
+        forecast3.innerHTML = `Monday: ${weatherData.daily[1].temp.day}&deg;F`;
     } else if (getThisDay === 6) {
-        forecast1.innerHTML = `Day: ${weatherData.daily[0].temp.day}&deg;F`;
-        forecast2.innerHTML = `Day: ${weatherData.daily[1].temp.day}&deg;F`;
-        forecast3.innerHTML = `Day: ${weatherData.daily[2].temp.day}&deg;F`;
+        forecast1.innerHTML = `Sunday: ${weatherData.daily[0].temp.day}&deg;F`;
+        forecast2.innerHTML = `Monday: ${weatherData.daily[1].temp.day}&deg;F`;
+        forecast3.innerHTML = `Tuesday: ${weatherData.daily[2].temp.day}&deg;F`;
     }
     
     forecast.appendChild(forecast1)
@@ -149,38 +149,3 @@ gridBtn.addEventListener('click', () => {
     cards.classList.remove('list');
     cards.classList.add('card');
 });
-
-
-
- 
-// nowClick = span.addEventListener('click', () => {
-//     if (span.style.filter === 'saturate(0) hue-rotate(180deg)') {
-//         span.style.filter = 'saturate(50) hue-rotate(180deg)';
-//     } else {
-//         span.style.filter = 'saturate(0) hue-rotate(180deg)'
-//     }
-// });
-
-
-
-// const article = document.querySelector("article");
-// const span = document.querySelector("#liked");
-
-// if (!localStorage.getItem("filter")) {
-// 	populateStorage();
-// } else {
-// 	setStyles();
-// }
-
-// function populateStorage() {
-// 	Number(localStorage.setItem("filter", (span.value)));
-// 	setStyles();
-// }
-
-// function setStyles() {
-// 	let currentColor = localStorage.getItem("filter");
-// 	span.className = currentColor;
-// }
-
-// span.addEventListener("click", populateStorage);
-
