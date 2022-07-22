@@ -95,7 +95,7 @@ function displayWeatherInfo (weatherData) {
     weatherImg.setAttribute('src', weatherIcon);
     weatherImg.setAttribute('alt', weatherDesc);
     temp.innerHTML = `${t}&deg;F`;
-    hum.innerHTML = h;
+    hum.innerHTML = h+'%';
     condition.innerHTML = weatherDesc.toUpperCase();
     if (getThisDay === 0) {
         forecast1.innerHTML = `Monday: ${weatherData.daily[1].temp.day}&deg;F`;
