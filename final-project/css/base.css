@@ -603,6 +603,14 @@ main.temples article.list h4 {
     color: #fff;
 }
 
+main.temples article section button#letlike.open span#liked {
+    color: blue;
+}
+
+main.temples article section button#letlike.close span#liked {
+    color: red;
+}
+
 main.temples article.list section:nth-child(1) p:nth-child(19),
 main.temples article.list section:nth-child(1) p:nth-child(20),
 main.temples article.list section:nth-child(1) p:nth-child(26),

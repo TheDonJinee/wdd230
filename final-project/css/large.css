@@ -361,7 +361,7 @@
     }
     
     main.reservation form .booking label {
-        flex-basis: 20%;
+        flex-basis: 25rem;
         font-size: 1.6rem;
     }
 
@@ -379,8 +379,8 @@
     }
 
     main.reservation form .booking input[type="submit"] {
-        flex-basis: 100%;
-        margin-left: 12rem;
+        flex-basis: 54rem;
+        margin: 10px 5px 10px auto;
     }
 
     main.services .service-pic-img {
@@ -487,6 +487,10 @@
 
     main.reception .venue-opt.one h4 {
         text-align: end;
+    }
+
+    main.reception .venue-opt.one img {
+        margin-left: 50px;
     }
 
     main.reception .venue-opt.two {
@@ -622,10 +626,10 @@
 
 
     main.missionary .form form input.bookBtn {
-        width: 79%;
-        font-size: 2rem;
+        font-size: 1.6rem;
         padding: .6rem 0;
-        margin-left: 15.8rem;
+        margin-left: 15rem;
+        flex-basis: 80%;
     }
 
     main.temples article {
